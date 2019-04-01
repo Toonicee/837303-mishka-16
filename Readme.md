@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Яковлев](https://up.htmlacademy.ru/adaptive/16/user/837303).
-* Наставник: `Неизвестно`.
+* Наставник: [Влад Слепкан](https://htmlacademy.ru/profile/id383197).
 
 ---
 
