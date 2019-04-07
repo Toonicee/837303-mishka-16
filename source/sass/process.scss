@@ -1,0 +1,39 @@
+.process {
+  margin: 0 30px auto;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  text-align:left;
+  margin-bottom: 58px;
+}
+
+.process__wrapper-title {
+  position: relative;
+}
+
+.process__title {
+  margin-left: 88px;
+}
+
+.process__title::before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-video.svg);
+  top: 7px;
+  left: 34px;
+}
+
+.process__text {
+  margin: 27px 34px 25px 34px;
+  font-weight: 400;
+  font-size: 13px;
+  color: #444444;
+}
+
+.process__button {
+margin-left:34px;
+padding: 17px 34px 15px 23px;
+margin-bottom: 32px;
+}
