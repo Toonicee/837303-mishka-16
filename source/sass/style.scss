@@ -1,0 +1,26 @@
+@import "content.scss";
+@import "font.scss";
+@import "page-header.scss";
+@import "main-nav.scss";
+@import "logo.scss";
+@import "page-main.scss";
+@import "best-product.scss";
+@import "short.scss";
+@import "reviews.scss";
+@import "contacts.scss";
+@import "page-footer.scss";
+@import "page-main-catalog.scss";
+@import "product.scss";
+@import "process.scss";
+
+body {
+  background-color: #ffffff;
+  font-family: "Open-Sans", sant-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+
