@@ -4,7 +4,11 @@
       <g id="slice" transform="translate(215.000000, 119.000000)">
       </g>
       <g id="editor-flag-triangle-notification-glyph">
+<<<<<<< HEAD
         <path fill="#63d1bb" d="M751.439,418.545v38.9l38.9-19.451L751.439,418.545z M743.66,496.346v-81.691h3.805v81.691H743.66z"/>
+=======
+        <path fill="#63D1BB" d="M751.439,418.545v38.9l38.9-19.451L751.439,418.545z M743.66,496.346v-81.691h3.805v81.691H743.66z"/>
+>>>>>>> 393afc21a1a6e4c5df192b606f0628d248b9acea
       </g>
     </g>
   </g>
