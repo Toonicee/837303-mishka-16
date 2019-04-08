@@ -2,20 +2,19 @@
   width: 320px;
 }
 
-.page-main_product-group{
-
+.page-main_product-group {
   position: relative;
 }
 
 .page-main__title {
-  font-size:30px;
-  line-height:30px;
+  font-size: 30px;
+  line-height: 30px;
   text-align: center;
 }
 
 .page-main__items {
   position: relative;
-  padding:25px 153px 30px 30px;
+  padding: 25px 153px 30px 30px;
   font-weight: 19px;
   line-height: 24px;
   display: block;
@@ -25,8 +24,8 @@
 }
 
 .page-main__wrapper {
-    display: block;
-  background-image: url(../img/hero-mobile@1x.jpg);
+  display: block;
+  background-image: url("../img/hero-mobile@1x.jpg");
   background-color: #fafafa;
   background-position: center;
   background-repeat: no-repeat;
@@ -38,12 +37,12 @@
 }
 
 .page-main__items--interior::before {
-    content: "";
+  content: "";
   position: absolute;
   width: 70px;
   height: 60px;
   right: 5px;
-  background-image: url(../img/icon-interior.svg);
+  background-image: url("../img/icon-interior.svg");
   background-repeat: no-repeat;
   opacity: 0.3;
 }
@@ -54,9 +53,7 @@
   width: 70px;
   height: 60px;
   right: 10px;
-  background-image: url(../img/icon-toy.svg);
+  background-image: url("../img/icon-toy.svg");
   background-repeat: no-repeat;
   opacity: 0.4;
 }
-
-

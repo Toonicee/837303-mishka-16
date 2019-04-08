@@ -1,6 +1,6 @@
 .best-product {
   display: flex;
-  text-align:center;
+  text-align: center;
 }
 
 .best-product__title {
@@ -18,16 +18,16 @@
 .best-product__tool-day {
   line-height: 20px;
   text-transform: uppercase;
-  color:#63d1bb;
+  color: #63d1bb;
   margin-right: 134px;
 }
 
 .best-product__description {
-  font-size:15px;
-  text-align:left;
-  margin-left:30px;
+  font-size: 15px;
+  text-align: left;
+  margin-left: 30px;
   font-weight: 400;
-  margin-top:21px;
+  margin-top: 21px;
   margin-bottom: 20px;
 }
 
@@ -38,27 +38,25 @@
 
 .best-product__price {
   display: inline-block;
-  margin-bottom:39px;
+  margin-bottom: 39px;
 }
 
 .best-product__specification {
-   font-weight: 400;
+  font-weight: 400;
   font-size: 15px;
   line-height: 20px;
-  text-align:left;
+  text-align: left;
   margin-left: 29px;
-  margin-bottom:30px;
-  border-collapse:collapse;
+  margin-bottom: 30px;
+  border-collapse: collapse;
 }
 
 .best-product__value,
 .best-product__field {
   padding: 8px 28px 10px 2px;
-  border-bottom:1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .best-product__item {
-  margin-bottom:18px;
+  margin-bottom: 18px;
 }
-
-
