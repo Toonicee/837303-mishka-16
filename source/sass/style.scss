@@ -1,0 +1,25 @@
+@import "page-header";
+@import "main-nav";
+@import "best-product";
+@import "content";
+@import "page-main";
+@import "contacts.scss";
+@import "page-footer";
+@import "short";
+@import "reviews";
+@import "page-main-catalog";
+@import "products";
+@import "process";
+@import "site-list";
+@import "social-list";
+
+body {
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}

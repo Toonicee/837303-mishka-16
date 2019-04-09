@@ -1,0 +1,21 @@
+.page-header__container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-header {
+  background-color: #ffffff;
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__logo {
+  display: flex;
+  justify-content: center;
+  margin: 22px 0 15px 0;
+}
+
+.page-header__link:hover {
+  opacity: 0.6;
+}
