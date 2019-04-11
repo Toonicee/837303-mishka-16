@@ -1,9 +1,8 @@
 .main-nav__toggle {
   position: absolute;
-  top: 32px;
+  top: 12px;
   right: 29px;
   z-index: 100;
-  display: block;
   width: 22px;
   height: 22px;
   background-color: #ffffff;
@@ -16,4 +15,23 @@
   text-align: center;
   padding: 0;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    margin-bottom: -80px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-nav__list {
+    width: 334px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

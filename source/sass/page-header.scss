@@ -1,13 +1,10 @@
-.page-header__container {
-  width: 320px;
-  margin: 0 auto;
-}
-
 .page-header {
   background-color: #ffffff;
   display: inline-block;
   position: relative;
   border-bottom: 1px solid #ececec;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .page-header__logo {
@@ -18,4 +15,54 @@
 
 .page-header__link:hover {
   opacity: 0.6;
+}
+
+.page-header__container {
+  position: relative;
+}
+
+.page-header__info {
+  font-size: 15px;
+  font-weight: 400;
+  color: #444444;
+  position: absolute;
+  right: 0;
+}
+
+@media (min-width: 768px) {
+  .page-header__container {
+    width: 668px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header__logo {
+    justify-content: flex-start;
+  }
+
+  .page-header__info {
+    display: block;
+  }
+
+  .page-header {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-header__wrapper {
+    width: 700px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .page-header__logo {
+    margin-right: 100px;
+  }
+
+  .page-header {
+    width: 1150px;
+  }
 }

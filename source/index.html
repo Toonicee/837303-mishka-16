@@ -2,60 +2,73 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head >
   <body>
     <header class="page-header">
       <div class="page-header__container">
-        <div class="page-header__logo logo">
-          <a class="page-header__link"  href="index.html">
-            <img class="logo__image" src="img/logo-mobile.svg">
-          </a>
-        </div>
-        <nav class="main-nav">
-          <div class="main-nav__wrapper">
-            <button class="main-nav__toggle"></button>
+        <div class="page-header__wrapper">
+          <div class="page-header__logo logo">
+            <a class="page-header__link"  href="index.html">
+              <img class="logo__image" src="img/logo-mobile.svg">
+            </a>
+          </div>
+          <nav class="main-nav">
+            <div class="main-nav__wrapper">
+              <button class="main-nav__toggle"></button>
               <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html"> Вязание на заказ</a>
-            </li>
-            <li class="site-list__item site-list__input--search">
-              <input class="site-list__input" type="search" name="search" placeholder="Поиск по сайту">
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--cart" href="#">Корзина:пока пуста</a>
-            </li>
-          </ul>
+                <li class="site-list__item site-list__item--active">
+                  <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="form.html"> Вязание на заказ</a>
+                </li>
+                <li class="site-list__item site-list__item--new visually-hidden">
+                  <a class="site-list__link site-list__link--new" href="#">Новое поступления</a>
+                </li>
+                <li class="site-list__item site-list__item--diskont visually-hidden">
+                  <a class="site-list__link site-list__link--diskont" href="#">Распродажа</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-        </nav>
-        </div>
+        <ul class="site-list_users site-list">
+          <li class="site-list__item site-list__input--search">
+            <input class="site-list__input" type="search" name="search" placeholder="Поиск по сайту">
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--cart" href="#">Корзина:пока пуста</a>
+          </li>
+        </ul>
+        <span class="page-header__info visually-hidden">Бесплатная доставка по России</span>
+      </div>
       </header>
     <main class="page-main">
-      <div class="page-main__container">
-        <a class="page-main__link visually-hidden" href="#">Новое поступления</a>
-        <a class="page-main__link visually-hidden" href="#">Распродажа</a>
-        <span class="page-main__info visually-hidden">Бесплатная доставка по России</span>
-        <div class="page-main__wrapper" >
+      <div class="page-main__wrapper">
+        <div class="page-main__inner" >
           <h1 class="page-main__title">Милые штуки ручной<br> работы для дома</h1>
         </div>
         <section class="page-main_product-group">
           <ul class="page-main__list">
             <li class="page-main__item-tool">
-              <a class="page-main__items page-main__items--interior" href="#">Предметы интерьера</a>
+              <a class="page-main__items page-main__items--interior" href="#">Предметы<br> интерьера</a>
             </li>
             <li class="page-main__item-tool">
-              <a class="page-main__items page-main__items--toys" href="#">Детские игрушки</a>
+              <a class="page-main__items page-main__items--toys" href="#">Детские<br> игрушки</a>
             </li>
           </ul>
         </section>
+      </div>
         <section class="best-product">
           <div class="best-product__wrapper">
-            <h2 class="best-product__title">Вязанные корзинки</h2>
-            <span class="best-product__tool-day">товар недели</span>
+            <div class="best-product__inner">
+              <h2 class="best-product__title">Вязанные корзинки</h2>
+              <span class="best-product__tool-day">товар недели</span>
+            </div>
+            <div class="best-product__description-wrapper">
             <p class="best-product__description">Экологически чистая пряжа,<br> ручная работа. Доступны в шести<br> расцветках, и трех размерах.</p>
             <table class="best-product__specification">
               <tr>
@@ -71,12 +84,13 @@
                 <td class="best-product__field">15см</td>
               </tr>
             </table>
-            <div class="best-product__item" >
-              <img class="best-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315">
-            </div>
             <div class="best-product-block-price">
               <span class="best-product__price">Цена: 990руб.</span>
               <a class="button best-product__button" type="button">Заказать</a>
+            </div>
+            </div>
+            <div class="best-product__item" >
+              <img class="best-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315">
             </div>
           </div>
         </div>
@@ -108,11 +122,11 @@
                 <p class="reviews__author-name">Анастасия Красильникова</p>
                 <span class="reviews__nick-name">@misssssiskras</span>
               </blockquote>
+              </div>
               <div class="reviews__button-slider">
                 <button class="arrow reviews__prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
                 <button class="arrow reviews__next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
               </div>
-            </div>
             <a href="#" class="reviews__button button">Написать</a>
           </div>
         </div>
@@ -135,13 +149,12 @@
           </div>
           <button class="contacts__button button">Напишите нам</button>
         </div>
-      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__container">
       <div class="page-footer__wrapper" >
         <a class="page-footer__logo logo" href="#">
-          <img class="logo-image--footer" src="http://placehold.it/150x100">
+          <img class="logo-image--footer" src="img/logo-footer.svg">
         </a>
       </div>
       <div class="page-footer__social social">

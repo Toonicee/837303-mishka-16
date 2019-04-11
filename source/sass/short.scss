@@ -1,4 +1,5 @@
 .short {
+  width: 320px;
   display: flex;
   margin-top: 65px;
 }
@@ -8,11 +9,9 @@
   margin-bottom: 89px;
 }
 
-.short__container {
-  width: 320px;
-}
-
 .short__list {
+  display: flex;
+  flex-wrap: wrap;
   line-height: 20px;
   list-style: none;
   text-align: left;
@@ -68,4 +67,49 @@
   background-image: url("../img/icon-feature-gift.svg");
   top: -53px;
   left: 3px;
+}
+
+@media (min-width: 768px) {
+  .short {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .short__title {
+    margin-left: 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .short__wrapper {
+    width: 668px;
+    margin: 0 50px auto;
+  }
+
+  .short__list {
+    padding: 0;
+  }
+
+  .short__item {
+    width: 334px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .short__item {
+    width: 350px;
+  }
+
+  .short {
+    width: 1150px;
+  }
+
+  .short__wrapper {
+    width: 1050px;
+    margin: 0 225px auto;
+  }
+
+  .short__list {
+    width: 700px;
+  }
 }

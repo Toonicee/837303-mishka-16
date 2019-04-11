@@ -1,6 +1,9 @@
 .best-product {
+  width: 320px;
+  margin-bottom: 150px;
   display: flex;
   text-align: center;
+  position: relative;
 }
 
 .best-product__title {
@@ -12,14 +15,14 @@
 }
 
 .best-product__wrapper {
-  position: relative;
+  margin: 0 30px auto;
 }
 
 .best-product__tool-day {
   line-height: 20px;
   text-transform: uppercase;
   color: #63d1bb;
-  margin-right: 134px;
+  margin-right: 130px;
 }
 
 .best-product__description {
@@ -33,7 +36,10 @@
 
 .best-product-block-price {
   width: 100%;
+  margin-top: 350px;
   text-align: center;
+  position: absolute;
+  left: 20px;
 }
 
 .best-product__price {
@@ -59,4 +65,57 @@
 
 .best-product__item {
   margin-bottom: 18px;
+}
+
+@media ($tablet-width: 768px) {
+  .best-product {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .best-product__description-wrapper {
+    width: 334px;
+  }
+
+  .best-product__description,
+  .best-product__specification {
+    margin-left: 0;
+  }
+
+  .best-product__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .best-product__inner {
+    width: 668px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .best-product-block-price {
+    width: 334px;
+    right: 0;
+    bottom: 1px;
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+
+  .best-product__item {
+    order: 2;
+  }
+}
+
+@media ($desktop-width: 1150px) {
+  .best-product__inner {
+    width: 1050px;
+    margin: 0 auto;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .best-product-block-price {
+    width: 334px;
+    flex-wrap: wrap;
+  }
 }
