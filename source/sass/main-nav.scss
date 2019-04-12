@@ -17,7 +17,7 @@
   margin: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .main-nav__toggle {
     display: none;
   }
@@ -27,7 +27,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .main-nav__list {
     width: 334px;
     display: flex;

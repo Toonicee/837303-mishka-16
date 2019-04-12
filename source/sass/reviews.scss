@@ -75,7 +75,7 @@
   padding-left: 77px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .reviews {
     width: 768px;
     margin: 0 auto;

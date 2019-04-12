@@ -67,8 +67,6 @@
   margin-bottom: 18px;
 }
 
-@media ($tablet-width: 768px) {
-  .best-product {
     width: 668px;
     margin: 0 auto;
   }
@@ -106,7 +104,7 @@
   }
 }
 
-@media ($desktop-width: 1150px) {
+@media (width: $desktop-width) {
   .best-product__inner {
     width: 1050px;
     margin: 0 auto;
