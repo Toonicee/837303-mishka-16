@@ -1,12 +1,13 @@
 .short {
   width: 320px;
   display: flex;
+  margin-bottom: 41px;
   margin-top: 65px;
 }
 
 .short__title {
   margin-left: 30px;
-  margin-bottom: 89px;
+  margin-bottom: 0;
 }
 
 .short__list {
@@ -16,11 +17,12 @@
   list-style: none;
   text-align: left;
   padding-left: 31px;
+  margin-top: 6px;
 }
 
 .short__item {
   position: relative;
-  margin-bottom: 83px;
+  margin-top: 83px;
 }
 
 .short__item::before {

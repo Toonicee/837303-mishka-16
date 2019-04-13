@@ -22,11 +22,13 @@
 }
 
 .page-header__info {
+  display: none;
   font-size: 15px;
   font-weight: 400;
   color: #444444;
   position: absolute;
-  right: 0;
+  right: 11px;
+  top: 106px;
 }
 
 @media (min-width: $tablet-width) {
@@ -46,7 +48,7 @@
   }
 
   .page-header {
-    width: 100%;
+    width: 776px;
   }
 }
 
@@ -59,10 +61,23 @@
   }
 
   .page-header__logo {
-    margin-right: 100px;
+    margin-right: 20px;
+  }
+
+  .page-header__info {
+    right: 58px;
   }
 
   .page-header {
-    width: 1150px;
+     width: 1150px;
+  }
+
+  .page-header__container {
+    width: 1050px;
+    padding: 0 50px;
+  }
+
+  .page-header__logo {
+    margin-left: 50px;
   }
 }
