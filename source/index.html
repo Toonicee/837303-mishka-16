@@ -15,20 +15,20 @@
               <img class="logo__image" src="img/logo-mobile.svg">
             </a>
           </div>
-          <nav class="main-nav">
+          <nav class="main-nav main-nav--closed main-nav--opened main-nav--nojs">
             <div class="main-nav__wrapper">
-              <button class="main-nav__toggle"></button>
+              <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
               <ul class="main-nav__list site-list">
-                <li class="site-list__item site-list__item--active">
+                <li class="site-list__item site-list__item--active site-list__item--border">
                   <a class="site-list__link" href="catalog.html">Каталог товаров</a>
                 </li>
                 <li class="site-list__item">
                   <a class="site-list__link" href="form.html"> Вязание на заказ</a>
                 </li>
-                <li class="site-list__item site-list__item--new visually-hidden">
+                <li class="site-list__item site-list__item--new">
                   <a class="site-list__link site-list__link--new" href="#">Новое поступления</a>
                 </li>
-                <li class="site-list__item site-list__item--diskont visually-hidden">
+                <li class="site-list__item site-list__item--diskont">
                   <a class="site-list__link site-list__link--diskont" href="#">Распродажа</a>
                 </li>
               </ul>
@@ -40,10 +40,10 @@
             <input class="site-list__input" type="search" name="search" placeholder="Поиск по сайту">
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--cart" href="#">Корзина:пока пуста</a>
+            <a class="site-list__link site-list__link--cart" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
-        <span class="page-header__info visually-hidden">Бесплатная доставка по России</span>
+        <span class="page-header__info">Бесплатная доставка по России</span>
       </div>
       </header>
     <main class="page-main">
@@ -69,6 +69,7 @@
               <span class="best-product__tool-day">товар недели</span>
             </div>
             <div class="best-product__description-wrapper">
+              <div class="best-product__description-inner">
             <p class="best-product__description">Экологически чистая пряжа,<br> ручная работа. Доступны в шести<br> расцветках, и трех размерах.</p>
             <table class="best-product__specification">
               <tr>
@@ -77,16 +78,17 @@
               </tr>
               <tr>
                 <td class="best-product__value">Диаметр:</td>
-                <td class="best-product__field">25см</td>
+                <td class="best-product__field">25 см</td>
               </tr>
               <tr>
                 <td class="best-product__value">Высота:</td>
-                <td class="best-product__field">15см</td>
+                <td class="best-product__field">15 см</td>
               </tr>
             </table>
             <div class="best-product-block-price">
               <span class="best-product__price">Цена: 990руб.</span>
               <a class="button best-product__button" type="button">Заказать</a>
+            </div>
             </div>
             </div>
             <div class="best-product__item" >
@@ -132,6 +134,7 @@
         </div>
       </section>
       <div class="contacts">
+        <div class="contacts__wrapper">
         <div class="contacts__container">
           <h3 class="contacts__title">Контакты</h3>
           <table class="contacts__table">
@@ -141,11 +144,13 @@
             </tr>
             <tr>
               <td class="contacts__value">адрес:</td>
-              <td class="contacts__field contacts__field--adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+              <td class="contacts__field contacts__field--adress">г. Санкт-Петербург , ул. Большая Конюшенная, д. 19/8, офис 101</td>
             </tr>
           </table>
+          </div>
           <div class="contacts__map">
             <img class="contacts__map-image" src="img/map-mobile@1x.jpg" width="322" height="457">
+          </div>
           </div>
           <button class="contacts__button button">Напишите нам</button>
         </div>
@@ -175,5 +180,22 @@
       </div>
       </div>
     </footer>
+    <script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+  var navUsers = document.querySelector('.site-list_users');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+</script>
   </body>
 </html>

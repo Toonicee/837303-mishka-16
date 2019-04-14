@@ -36,3 +36,21 @@
   top: -63px;
   left: 79px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .social__link--instagram::after {
+    top: -12px;
+    left: 52px;
+  }
+
+  .social__link--facebook::after {
+    top: -18px;
+    left: 95px;
+  }
+
+  .social__link--twitter::after {
+    top: -12px;
+    left: 129px;
+  }
+}

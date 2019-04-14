@@ -1,3 +1,4 @@
+@import "variables";
 @import "page-header";
 @import "main-nav";
 @import "best-product";
@@ -11,9 +12,9 @@
 @import "process";
 @import "site-list";
 @import "social-list";
-@import "variables";
 
 body {
+  min-width: 320px;
   background-color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
@@ -22,4 +23,23 @@ body {
   color: #000000;
   padding: 0;
   margin: 0;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    width: 1150px;
+  }
 }

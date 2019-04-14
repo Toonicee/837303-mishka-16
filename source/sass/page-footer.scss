@@ -3,6 +3,7 @@
 }
 
 .page-footer {
+  width: 320px;
   background-color: #f1f1f1;
 }
 
@@ -11,13 +12,13 @@
 }
 
 .page-footer__social {
-  margin: 41px 10px 0 10px;
-  padding-top: 26px;
+  margin: 39px 10px 0 10px;
+  padding: 26px 0 0 2px;
 }
 
 .page-footer__text {
   display: inline-block;
-  margin-left: 69px;
+  margin-left: 19px;
   text-decoration: none;
   color: #000000;
   line-height: 18px;
@@ -36,15 +37,34 @@
   background-image: url("../img/logo-htmlacademy.svg");
 }
 
-@media (min-width: 768px) {
+.page-footer__developed {
+  margin: 0 63px 6px 66px;
+}
+
+@media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: block;
   }
 
+  .page-footer {
+    width: 768px;
+  }
+
+  .page-footer__text {
+    margin: 0;
+
+    &::before {
+      top: -6px;
+      left: 156px;
+    }
+  }
+
   .page-footer__container {
     width: 668px;
-    margin: 0 50px auto;
+    margin: 0 auto;
+    padding: 8px 0 60px 0;
     display: flex;
+    align-items: flex-end;
     justify-content: space-between;
   }
 
@@ -52,13 +72,21 @@
     margin: 0;
     padding: 0;
   }
+
+  .page-footer__developed {
+    margin: 0 63px 6px 0;
+  }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .page-footer__wrapper,
   .page-footer__social,
   .page-footer__developed {
     width: 350px;
+  }
+
+  .page-footer {
+    width: 1150px;
   }
 
   .page-footer__container {

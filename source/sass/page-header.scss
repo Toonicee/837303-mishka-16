@@ -23,14 +23,16 @@
 }
 
 .page-header__info {
+  display: none;
   font-size: 15px;
   font-weight: 400;
   color: #444444;
   position: absolute;
-  right: 0;
+  right: 11px;
+  top: 106px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .page-header__container {
     width: 668px;
     margin: 0 auto;
@@ -47,11 +49,11 @@
   }
 
   .page-header {
-    width: 100%;
+    width: 776px;
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .page-header__wrapper {
     width: 700px;
     display: flex;
@@ -60,10 +62,20 @@
   }
 
   .page-header__logo {
-    margin-right: 100px;
+    margin-right: 20px;
+    margin-left: 50px;
+  }
+
+  .page-header__info {
+    right: 58px;
   }
 
   .page-header {
     width: 1150px;
+  }
+
+  .page-header__container {
+    width: 1050px;
+    padding: 0 50px;
   }
 }
