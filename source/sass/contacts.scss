@@ -61,14 +61,14 @@
     margin-bottom: 57px;
 
     &::before {
-     content: "";
-     position: absolute;
-     width: 50px;
-     height: 82px;
-     background-image: url(../img/icon-flag.svg);
-     background-repeat: no-repeat;
-     top: -16px;
-     right: 50px;
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 82px;
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+      top: -16px;
+      right: 50px;
     }
   }
 
@@ -159,7 +159,7 @@
 
   .contacts__map {
     width: 525px;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .contacts__button {

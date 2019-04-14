@@ -45,7 +45,6 @@
   content: "";
   position: absolute;
   width: 70px;
-  height: 60px;
   height: 63px;
   right: 7px;
   top: 21px;
@@ -77,7 +76,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .page-main__container {
     width: 768px;
     margin: 0 auto;
@@ -101,7 +99,7 @@
   }
 
   .page-main__title {
-    background-image: url(../img/hero-tablet@1x.jpg);
+    background-image: url("../img/hero-tablet@1x.jpg");
     font-size: 43px;
     line-height: 50px;
     padding-top: 151px;
@@ -123,7 +121,7 @@
 
   .page-main__items--toys::before {
     right: 25px;
-    top: 32px
+    top: 32px;
   }
 }
 

@@ -94,7 +94,7 @@
   }
 
   .best-product__title {
-    margin: 0px;
+    margin: 0;
     font-size: 43px;
     line-height: 50px;
   }
@@ -166,6 +166,9 @@
 
   .best-product__item {
     width: 525px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 
   .best-product__inner {
@@ -184,12 +187,6 @@
 
   .best-product__description {
     margin-bottom: 49px;
-  }
-
-  .best-product__item {
-    position: absolute;
-    right: 0;
-    bottom: 0;
   }
 
   .best-product__title {
