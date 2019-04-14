@@ -11,8 +11,6 @@
 }
 
 .short__list {
-  display: flex;
-  flex-wrap: wrap;
   line-height: 20px;
   list-style: none;
   text-align: left;
@@ -59,7 +57,7 @@
 }
 
 .short__item--rocket::before {
-  background-image: url("../img/icon-feature-rocket.svg");
+  background-image: url("../img/icon-feature-money.svg");
   top: -50px;
   width: 55px;
   left: -6px;
@@ -74,6 +72,11 @@
 @media (min-width: $tablet-width) {
   .short {
     width: 768px;
+    margin-bottom: 100px;
+  }
+
+  .short__container {
+    width: 668px;
     margin: 0 auto;
   }
 
@@ -83,17 +86,42 @@
     line-height: 50px;
   }
 
-  .short__wrapper {
-    width: 668px;
-    margin: 0 50px auto;
-  }
-
   .short__list {
+    margin-top: 19px;
+    display: flex;
     padding: 0;
+    flex-wrap: wrap;
   }
 
   .short__item {
+    margin-bottom: 29px;
+    font-size: 20px;
+    line-height: 22px;
     width: 334px;
+  }
+
+  .short__item--ball {
+    order: 2;
+  }
+
+  .short__item--clean {
+    order: 1;
+  }
+
+  .short__item--ru-price {
+    order: 3;
+  }
+
+  .short__item--likes {
+    order: 5;
+  }
+
+  .short__item--rocket {
+    order: 4;
+  }
+
+  .short__item--gift {
+    order: 6;
   }
 }
 
@@ -102,13 +130,24 @@
     width: 350px;
   }
 
+  .short__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
   .short {
     width: 1150px;
+    margin-bottom: 42px;
+  }
+
+  .short__containrt {
+    width: 700px;
+    margin: 0 auto;
   }
 
   .short__wrapper {
     width: 1050px;
-    margin: 0 225px auto;
+    margin: 0 auto;
   }
 
   .short__list {
