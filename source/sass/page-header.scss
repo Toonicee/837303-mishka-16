@@ -3,13 +3,12 @@
   display: inline-block;
   position: relative;
   border-bottom: 1px solid #ececec;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .page-header__logo {
   display: flex;
-  justify-content: center;
   margin: 22px 0 15px 0;
 }
 
@@ -19,6 +18,7 @@
 
 .page-header__container {
   position: relative;
+  margin: 0 30px auto;
 }
 
 .page-header__info {

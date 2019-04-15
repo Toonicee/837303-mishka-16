@@ -7,28 +7,28 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="page-header">
-    <div class="page-header__container">
-      <div class="page-header__wrapper">
-        <div class="page-header__logo logo">
-          <a class="page-header__link"  href="index.html">
-            <img class="logo__image" src="img/logo-mobile.svg">
-          </a>
+      <header class="page-header">
+      <div class="page-header__container">
+        <div class="page-header__wrapper">
+          <div class="page-header__logo logo">
+            <a class="page-header__link"  href="index.html">
+              <img class="logo__image" src="img/logo-mobile.svg">
+            </a>
           </div>
-          <nav class="main-nav">
+          <nav class="main-nav main-nav--closed main-nav--opened main-nav--nojs">
             <div class="main-nav__wrapper">
-              <button class="main-nav__toggle"></button>
+              <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
               <ul class="main-nav__list site-list">
-                <li class="site-list__item site-list__item--active">
+                <li class="site-list__item site-list__item--active site-list__item--border">
                   <a class="site-list__link" href="catalog.html">Каталог товаров</a>
                 </li>
                 <li class="site-list__item">
                   <a class="site-list__link" href="form.html"> Вязание на заказ</a>
                 </li>
-                <li class="site-list__item site-list__item--new visually-hidden">
+                <li class="site-list__item site-list__item--new">
                   <a class="site-list__link site-list__link--new" href="#">Новое поступления</a>
                 </li>
-                <li class="site-list__item site-list__item--diskont visually-hidden">
+                <li class="site-list__item site-list__item--diskont">
                   <a class="site-list__link site-list__link--diskont" href="#">Распродажа</a>
                 </li>
               </ul>
@@ -40,10 +40,10 @@
             <input class="site-list__input" type="search" name="search" placeholder="Поиск по сайту">
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--cart" href="#">Корзина:пока пуста</a>
+            <a class="site-list__link site-list__link--cart" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
-        <span class="page-header__info visually-hidden">Бесплатная доставка по России</span>
+        <span class="page-header__info">Бесплатная доставка по России</span>
       </div>
       </header>
     <main class="page-main">
@@ -130,5 +130,22 @@
       </div>
     </div>
   </footer>
+      <script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+  var navUsers = document.querySelector('.site-list_users');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+</script>
 </body>
 </html>

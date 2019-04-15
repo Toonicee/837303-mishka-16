@@ -2,6 +2,7 @@
   margin-bottom: 171px;
   display: flex;
   text-align: center;
+  justify-content: center;
   position: relative;
 }
 
@@ -40,10 +41,11 @@
   width: 300px;
   text-align: center;
   position: absolute;
-  left: 8px;
+  background-position: center;
   bottom: -119px;
   flex-wrap: wrap;
   margin-top: 0;
+
 }
 
 .best-product__price {
@@ -161,7 +163,6 @@
 
   .best-product {
     width: 1150px;
-    margin-bottom: 303px;
   }
 
   .best-product__item {

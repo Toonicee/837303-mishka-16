@@ -1,7 +1,7 @@
 .reviews {
-  width: 320px;
   margin-bottom: 87px;
   display: flex;
+  justify-content: center;
   position: relative;
 }
 
@@ -55,6 +55,14 @@
   background-color: #ffffff;
   border: 1px solid #ececec;
   padding: 25px 65px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .reviews__prev::before {
