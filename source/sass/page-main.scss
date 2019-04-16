@@ -4,15 +4,18 @@
 
 .page-main__title {
   display: block;
-  background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 10%;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
   padding-top: 110px;
   padding-bottom: 83px;
   margin: 0 auto;
+}
+
+.page-main__title--index {
+  background-image: url("../img/hero-mobile@1x.jpg");
 }
 
 .page-main__wrapper-title {
@@ -79,8 +82,7 @@
 
   .page-main__wrapper,
   .page-main__wrapper-title {
-    width: 668px;
-    padding: 0 50px;
+    padding: 0;
   }
 
   .page-main__wrapper-catalog {
@@ -95,13 +97,16 @@
   }
 
   .page-main__title {
-    background-image: url("../img/hero-tablet@1x.jpg");
     font-size: 43px;
     line-height: 50px;
     padding-top: 151px;
     padding-right: 67px;
     padding-bottom: 374px;
   }
+
+  .page-main__title--index {
+  background-image: url("../img/hero-tablet@1x.jpg");
+}
 
   .page-main__items {
     padding: 32px 153px 30px 34px;
@@ -151,5 +156,10 @@
 
   .page-main__item-tool {
     width: 525px;
+  }
+
+  .page-main__container {
+    width: 1050px;
+    margin: 0 auto;
   }
 }
