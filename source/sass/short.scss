@@ -1,27 +1,25 @@
 .short {
+  justify-content: center;
   display: flex;
+  margin-bottom: 41px;
   margin-top: 65px;
 }
 
 .short__title {
-  margin-left: 30px;
-  margin-bottom: 89px;
-}
-
-.short__container {
-  width: 320px;
+  margin-bottom: 0;
 }
 
 .short__list {
   line-height: 20px;
   list-style: none;
   text-align: left;
-  padding-left: 31px;
+  padding: 0;
+  margin-top: 6px;
 }
 
 .short__item {
   position: relative;
-  margin-bottom: 83px;
+  margin-top: 83px;
 }
 
 .short__item::before {
@@ -68,4 +66,89 @@
   background-image: url("../img/icon-feature-gift.svg");
   top: -53px;
   left: 3px;
+}
+
+@media (min-width: $tablet-width) {
+  .short {
+    margin-bottom: 100px;
+  }
+
+  .short__container {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .short__title {
+    margin-left: 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .short__list {
+    margin-top: 19px;
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .short__item {
+    margin-bottom: 29px;
+    font-size: 20px;
+    line-height: 22px;
+    width: 334px;
+  }
+
+  .short__item--ball {
+    order: 2;
+  }
+
+  .short__item--clean {
+    order: 1;
+  }
+
+  .short__item--ru-price {
+    order: 3;
+  }
+
+  .short__item--likes {
+    order: 5;
+  }
+
+  .short__item--rocket {
+    order: 4;
+  }
+
+  .short__item--gift {
+    order: 6;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .short__item {
+    width: 350px;
+  }
+
+  .short__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .short {
+    width: 1150px;
+    margin-bottom: 42px;
+  }
+
+  .short__containrt {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .short__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .short__list {
+    width: 700px;
+  }
 }

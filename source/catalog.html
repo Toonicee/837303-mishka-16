@@ -2,70 +2,94 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="page-header">
-    <div class="page-header__container">
-      <div class="page-header__logo logo">
-        <a class="page-header__link"  href="index.html">
-          <img class="logo__image" src="img/logo-mobile.svg">
-        </a>
-      </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <button class="main-nav__toggle"></button>
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="form.html"> Вязание на заказ</a>
-              </li>
-              <li class="site-list__item site-list__input--search">
-                <input class="site-list__input" type="search" name="search" placeholder="Поиск по сайту">
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--cart" href="#">Корзина:пока пуста</a>
-              </li>
-            </ul>
+      <header class="page-header">
+      <div class="page-header__container">
+        <div class="page-header__wrapper">
+          <div class="page-header__logo logo">
+            <a class="page-header__link"  href="index.html">
+              <img class="logo__image" src="img/logo-mobile.svg">
+            </a>
+          </div>
+          <nav class="main-nav main-nav--closed main-nav--opened main-nav--nojs">
+            <div class="main-nav__wrapper">
+              <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item site-list__item--active site-list__item--border">
+                  <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="form.html"> Вязание на заказ</a>
+                </li>
+                <li class="site-list__item site-list__item--new">
+                  <a class="site-list__link site-list__link--new" href="#">Новое поступления</a>
+                </li>
+                <li class="site-list__item site-list__item--diskont">
+                  <a class="site-list__link site-list__link--diskont" href="#">Распродажа</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-      </nav>
-    </div>
-    </header>
+        <ul class="site-list_users site-list">
+          <li class="site-list__item site-list__input--search">
+            <input class="site-list__input" type="search" name="search" placeholder="Поиск по сайту">
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--cart" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <span class="page-header__info">Бесплатная доставка по России</span>
+      </div>
+      </header>
     <main class="page-main">
-      <div class="page-main__container">
         <div class="page-main__wrapper-title">
           <h1 class="page-main__title">Каталог товаров</h1>
         </div>
+        <div class="page-main__container">
         <div class="page-main__wrapper-catalog">
           <div class="products">
             <div class="products__item">
               <div class="products__wrapper-image">
                 <img class="products__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Вязаная игрушка зайчик-попрыгайчик">
               </div>
-              <div class="products__description">
-                <h3 class="products__title">Зайчик-попрыгайчик</h3>
-                <span class="products__specification">Рост 30 см, вес 200 г</span>
-                <a class="products__price"  href="#">1 200 руб.</a>
+              <div class="products__info">
+                <div class="products__description">
+                  <h3 class="products__title">Зайчик-попрыгайчик</h3>
+                  <span class="products__specification">Рост 30 см, вес 200 г</span>
+                </div>
+                <div class="products__block-price">
+                  <a class="products__price"  href="#">1 200 руб.</a>
+                </div>
               </div>
             </div>
             <div class="products__item">
               <img class="products__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="корзинка для белья">
+              <div class="products__info">
               <div class="products__description">
                 <h3 class="products__title">Корзинка для белья</h3>
                 <span class="products__specification">Диаметр 15см, высота 10 см</span>
+              </div>
+              <div class="products__block-price">
                 <a class="products__price" href="#">690 руб.</a>
               </div>
             </div>
+            </div>
             <div class="products__item">
               <img class="products__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="большая корзинка для игрушек">
+              <div class="products__info">
               <div class="products__description">
                 <h3 class="products__title">Большая корзинка для игрушек</h3>
                 <span class="products__specification">Диаметр 30 см, высота 30 см</span>
+              </div>
+              <div class="products__block-price">
                 <a class="products__price" href="#">1 500 руб.</a>
               </div>
+            </div>
             </div>
           </div>
           <section class="process">
@@ -106,5 +130,22 @@
       </div>
     </div>
   </footer>
+      <script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+  var navUsers = document.querySelector('.site-list_users');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+</script>
 </body>
 </html>
