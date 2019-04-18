@@ -3,6 +3,18 @@
   display: flex;
   margin-bottom: 41px;
   margin-top: 65px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 6px;
+    background: url("../img/bg-zigzag-line.svg") repeat-x;
+    background-size: auto 6px;
+  }
 }
 
 .short__title {
@@ -71,6 +83,11 @@
 @media (min-width: $tablet-width) {
   .short {
     margin-bottom: 100px;
+
+    &::before {
+      background-size: auto 17px;
+      height: 20px;
+    }
   }
 
   .short__container {
@@ -134,7 +151,6 @@
   }
 
   .short {
-    width: 1150px;
     margin-bottom: 42px;
   }
 
@@ -144,7 +160,6 @@
   }
 
   .short__wrapper {
-    width: 1050px;
     margin: 0 auto;
   }
 
