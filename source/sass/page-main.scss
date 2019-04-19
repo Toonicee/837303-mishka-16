@@ -5,12 +5,11 @@
 .page-main__title {
   display: block;
   background-repeat: no-repeat;
-  background-position: 50% 10%;
+  background-position: 50% 40%;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-  padding-top: 110px;
-  padding-bottom: 83px;
+  padding: 42px 28px 120px 16px;
   margin: 0 auto;
 }
 
@@ -38,7 +37,7 @@
 
 .page-main__wrapper-title {
   background-color: #f1f1f1;
-  padding: 20px 0 56px 0;
+  padding: 29px 0 0 0;
   margin: 0 auto;
 }
 
@@ -98,17 +97,6 @@
     margin: 0 auto;
   }
 
-  .page-main_product-group::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 20px;
-    background-image: url("../img/bg-zigzag-fill.svg");
-    z-index: 100;
-    bottom: 0;
-    left: 0;
-  }
-
   .page-main__wrapper--form {
     width: 668px;
     margin: 0 auto;
@@ -133,9 +121,7 @@
   .page-main__title {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 151px;
-    padding-right: 67px;
-    padding-bottom: 374px;
+    padding: 154px 67px 374px 25px;
   }
 
   .page-main__title--index {
@@ -143,7 +129,7 @@
   }
 
   .page-main__items {
-    padding: 32px 153px 30px 34px;
+    padding: 32px 153px 35px 34px;
   }
 
   .page-main__item-tool {

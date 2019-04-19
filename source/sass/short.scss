@@ -1,5 +1,4 @@
 .short {
-  justify-content: center;
   display: flex;
   margin-bottom: 41px;
   margin-top: 65px;
@@ -9,12 +8,17 @@
     position: absolute;
     content: "";
     display: block;
-    top: 0;
+    top: -19px;
     width: 100%;
     height: 6px;
     background: url("../img/bg-zigzag-line.svg") repeat-x;
     background-size: auto 6px;
   }
+}
+
+.short__container {
+  width: 260px;
+  margin: 0 auto;
 }
 
 .short__title {
@@ -44,8 +48,12 @@
   left: 8px;
 }
 
-.short__item--clean::before {
-  background-image: url("../img/icon-feature-flower.svg");
+.short__item--clean {
+  margin-top: 85px;
+
+  &::before {
+    background-image: url("../img/icon-feature-flower.svg");
+  }
 }
 
 .short__item--ru-price::before {
@@ -85,8 +93,9 @@
     margin-bottom: 100px;
 
     &::before {
-      background-size: auto 17px;
+      background-size: auto 16px;
       height: 20px;
+      top: -27px;
     }
   }
 
@@ -152,6 +161,12 @@
 
   .short {
     margin-bottom: 42px;
+
+    &::before {
+      background-size: auto 24px;
+      height: 25px;
+      top: -40px;
+    }
   }
 
   .short__containrt {
