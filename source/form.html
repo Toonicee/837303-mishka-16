@@ -12,7 +12,11 @@
         <div class="page-header__wrapper">
           <div class="page-header__logo logo">
             <a class="page-header__link"  href="index.html">
-              <img class="logo__image" src="img/logo-mobile.svg">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип Mishka">
+              </picture>
             </a>
           </div>
           <nav class="main-nav main-nav--closed main-nav--opened main-nav--nojs">

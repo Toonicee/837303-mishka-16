@@ -128,6 +128,11 @@
     background-image: url("../img/hero-tablet@1x.jpg");
   }
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-tablet@2x.jpg");
+    background-size: 1338px auto;
+  }
+
   .page-main__items {
     padding: 32px 153px 35px 34px;
   }
@@ -154,6 +159,16 @@
 
   .page-main__list {
     width: 1050px;
+  }
+
+  .page-main__wrapper-catalog {
+    width: 100%;
+    margin: 126px 0 0 0;
+  }
+
+  .page-main__title--catalog,
+  .page-main__title-form {
+    padding: 96px 70px 100px 25px;
   }
 
   .page-main__title {
