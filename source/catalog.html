@@ -52,7 +52,9 @@
       </header>
     <main class="page-main">
         <div class="page-main__wrapper-title">
-          <h1 class="page-main__title page-main__title--catalog">Каталог товаров</h1>
+          <div class="container">
+            <h1 class="page-main__title page-main__title--catalog">Каталог товаров</h1>
+          </div>
         </div>
         <div class="page-main__container">
         <div class="page-main__wrapper-catalog">
@@ -109,7 +111,9 @@
           <section class="process">
             <div class="process__inner">
               <picture class="process__video">
-                <img src="img/video-mobile@1x.jpg">
+                  <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x,">
+                  <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x"  alt="Видео обзор">
               </picture>
             </div>
             <div class="process__wrapper">

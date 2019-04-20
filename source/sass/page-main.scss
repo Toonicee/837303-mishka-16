@@ -9,8 +9,11 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-  padding: 42px 28px 120px 16px;
   margin: 0 auto;
+}
+
+.page-main__title-container {
+   padding: 42px 28px 120px 16px;
 }
 
 .page-main__text {
@@ -122,6 +125,12 @@
     font-size: 43px;
     line-height: 50px;
     padding: 154px 67px 374px 25px;
+  }
+
+  .page-main__title--catalog {
+    font-size: 43px;
+    line-height: 50px;
+    padding: 90px 67px 100px 25px;
   }
 
   .page-main__title--index {
