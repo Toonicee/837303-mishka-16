@@ -1,5 +1,6 @@
 .contacts {
   width: 320px;
+  margin: 0 auto;
 }
 
 .contacts__container {
@@ -28,6 +29,10 @@
   padding-right: 20px;
 }
 
+.contacts__field--email {
+  padding: 11px 20px 1px 7px;
+}
+
 .contacts__field--adress {
   padding: 18px 36px 1px 8px;
 }
@@ -49,7 +54,7 @@
 }
 
 .contacts__button {
-  margin-left: 20px;
+  margin-left: 0;
   background-color: #ffffff;
   padding: 17px 63px 15px 50px;
 }
@@ -100,6 +105,10 @@
   .contacts__value {
     padding: 0;
     margin-right: 26px;
+  }
+
+  .contacts__field--email {
+    padding-top: 0;
   }
 
   .contacts__field--adress {

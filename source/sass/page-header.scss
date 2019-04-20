@@ -4,7 +4,7 @@
   display: inline-block;
   position: relative;
   border-bottom: 1px solid #ececec;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -20,6 +20,7 @@
 
 .page-header__container {
   position: relative;
+  margin: 0 30px auto;
 }
 
 .page-header__info {
@@ -46,10 +47,6 @@
 
   .page-header__info {
     display: block;
-  }
-
-  .page-header {
-    width: 776px;
   }
 }
 

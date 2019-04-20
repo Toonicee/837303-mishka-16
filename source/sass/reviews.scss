@@ -1,8 +1,19 @@
 .reviews {
-  width: 320px;
   margin-bottom: 87px;
   display: flex;
+  justify-content: center;
   position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: -51px;
+    width: 100%;
+    height: 6px;
+    background: url("../img/bg-zigzag-line.svg") repeat-x;
+    background-size: auto 7px;
+  }
 }
 
 .reviews__wrapper {
@@ -55,6 +66,14 @@
   background-color: #ffffff;
   border: 1px solid #ececec;
   padding: 25px 65px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .reviews__prev::before {
@@ -91,8 +110,13 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    width: 768px;
     margin-bottom: 163px;
+
+    &::before {
+      background-size: auto 16px;
+      height: 20px;
+      bottom: -105px;
+    }
   }
 
   .reviews__title {
@@ -160,6 +184,12 @@
 @media (min-width: $desktop-width) {
   .reviews {
     width: 1150px;
+
+    &::before {
+      background-size: auto 20px;
+      height: 20px;
+      bottom: -85px;
+    }
   }
 
   .reviews__container {

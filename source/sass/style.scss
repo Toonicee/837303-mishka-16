@@ -12,17 +12,18 @@
 @import "process";
 @import "site-list";
 @import "social-list";
+@import "form-order";
 
 body {
-  min-width: 320px;
+  width: 100%;
   background-color: #ffffff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: #000000;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .visually-hidden:not(:focus):not(:active) {

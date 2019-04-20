@@ -1,10 +1,12 @@
 .page-footer__wrapper {
+
   display: none;
 }
 
 .page-footer {
-  width: 320px;
   background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
 }
 
 .page-footer__container {
@@ -24,30 +26,26 @@
   line-height: 18px;
   font-size: 19px;
   position: relative;
-}
 
-.page-footer__text::before {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 35px;
-  top: -3px;
-  left: 140px;
-  background-repeat: no-repeat;
-  background-image: url("../img/logo-htmlacademy.svg");
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 35px;
+    top: -8px;
+    left: 155px;
+    background-repeat: no-repeat;
+    background-image: url("../img/logo-htmlacademy.svg");
+  }
 }
 
 .page-footer__developed {
-  margin: 0 63px 6px 66px;
+  margin: 0 57px 0 66px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: block;
-  }
-
-  .page-footer {
-    width: 768px;
   }
 
   .page-footer__text {
@@ -83,10 +81,6 @@
   .page-footer__social,
   .page-footer__developed {
     width: 350px;
-  }
-
-  .page-footer {
-    width: 1150px;
   }
 
   .page-footer__container {
