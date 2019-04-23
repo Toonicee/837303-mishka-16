@@ -35,6 +35,10 @@
   flex-wrap: wrap;
 }
 
+.page-main__wrapper-catalog {
+  margin-top: 30px;
+}
+
 .page-main__title-form {
   padding: 51px 0 19px 0;
 }
@@ -141,6 +145,13 @@
   .page-main__container {
     width: 768px;
     margin: 0 auto;
+  }
+
+  .page-main__text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    margin: 72px 34px 62px 0;
   }
 
   .page-main__wrapper--form {

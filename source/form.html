@@ -19,7 +19,7 @@
               </picture>
             </a>
           </div>
-          <nav class="main-nav main-nav--closed main-nav--opened main-nav--nojs">
+          <nav class="main-nav main-nav--closed main-nav--nojs">
             <div class="main-nav__wrapper">
               <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
               <ul class="main-nav__list site-list">
@@ -82,32 +82,32 @@
             <span class="form-order__title form-order__title--checkbox">Цвет</span>
             <ul class="form-order__list form-order__list--color">
               <li class="form-order__item--checkbox">
-                <label class="form-order__label">
+                <label class="form-order__label form-order__label-checkbox">
                   <input type="checkbox" name="checkbox" class="form-order__input-checkbox" checked>
                 Белый</label>
               </li>
               <li class="form-order__item--checkbox">
-                <label class="form-order__label">
+                <label class="form-order__label form-order__label-checkbox">
                   <input type="checkbox" name="checkbox" class="form-order__input-checkbox type="checkbox" name="checkbox" checked>
                 Серый</label>
               </li>
               <li class="form-order__item--checkbox">
-                <label class="form-order__label">
+                <label class="form-order__label form-order__label-checkbox">
                   <input type="checkbox" name="checkbox" class="form-order__input-checkbox">
                 «Тиффани»</label>
               </li>
               <li class="form-order__item--checkbox">
-                <label class="form-order__label">
+                <label class="form-order__label form-order__label-checkbox">
                   <input class="form-order__input-checkbox" type="checkbox" name="checkbox">
                 Черный</label>
               </li>
               <li class="form-order__item--checkbox">
-                <label class="form-order__label">
+                <label class="form-order__label form-order__label-checkbox">
                   <input class="form-order__input-checkbox" type="checkbox" name="checkbox">
                 Розовый</label>
               </li>
               <li class="form-order__item--checkbox">
-                <label class="form-order__label">
+                <label class="form-order__label form-order__label-checkbox">
                   <input class="form-order__input-checkbox" type="checkbox" name="checkbox">
                 Оранжевый</label>
               </li>
@@ -115,20 +115,20 @@
           </div>
           </fieldset>
           <fieldset class="form-order__wrapper-fields">
-            <div class="form-order__inner">
-            <span class="form-order__title form-order__title-fields">ФИО</span>
+            <div class="form-order__wrapper">
+            <span class="form-order__title form-order__title-name">ФИО</span>
             <ul class="form-order__list">
-              <li class="form-order__item">
+              <li class="form-order__item form-order__item--fields">
                 <label class="form-order__label form-order__label--fields"> Имя:
                   <input class="form-order__input-fields" type="text" name="text" placeholder="Введите ваше имя*">
                 </label>
               </li>
-              <li class="form-order__item">
+              <li class="form-order__item form-order__item--fields">
                 <label class="form-order__label form-order__label--fields">Фамилия:
                   <input class="form-order__input-fields" type="text" name="text" placeholder="Укажите фамилию*">
                 </label>
               </li>
-              <li class="form-order__item">
+              <li class="form-order__item form-order__item--fields">
                 <label class="form-order__label form-order__label--fields">Отчество:
                   <input class="form-order__input-fields" type="text" name="text" placeholder="Отчество, если желаете*">
                 </label>
@@ -138,24 +138,26 @@
           </fieldset>
           <fieldset>
             <div class="form-order__inner">
-            <span class="form-order__title form-order__title-fields">Тел:</span>
-            <input type="tel" name="tel" placeholder="+7 XXX XXX XX XX">
+            <span class="form-order__title form-order__title-tel">Тел:</span>
+            <input class="form-order__input-tel" type="tel" name="tel" placeholder="+7 XXX XXX XX XX">
           </div>
           </fieldset>
           <fieldset>
             <div class="form-order__inner">
-            <span class="form-order__title form-order__title-fields">E-mail:</span>
-            <input type="text" name="e-mail" placeholder="Ваш Email">
+            <span class="form-order__title form-order__title-Email">E-mail:</span>
+            <input class="form-order__input-Email" type="text" name="e-mail" placeholder="Ваш Email">
           </div>
           </fieldset>
           <fieldset>
-            <div class="form-order__inner">
-            <span class="form-order__title form-order__title-fields">Доп:</span>
-            <textarea placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <div class="form-order__inner form-order__inner--bottom">
+            <span class="form-order__title form-order__title-textarea">Доп:</span>
+            <textarea class="form-order__textarea" rows="6" cols="50" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
           </fieldset>
+          <div class="form-order__wrapper-button">
             <span class="form-order__necessarily">*Поля обязательны для заполнения</span>
             <button class="form-order__button button">Отправить заказ</button>
+          </div>
         </form>
       </div>
     </div>
@@ -203,5 +205,21 @@
         <button class="button modal-button" type="submit" title="Добавить в корзину">Добавить</button>
       </form>
     </div>
+        <script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+</script>
   </body>
 </html>
