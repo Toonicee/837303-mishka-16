@@ -15,6 +15,7 @@
     <header class="page-header">
       <div class="page-header__container">
         <div class="page-header__wrapper">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="page-header__logo logo">
             <a class="page-header__link"  href="index.html">
               <picture>
@@ -23,10 +24,10 @@
                 <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип Mishka">
               </picture>
             </a>
+            <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
           </div>
-          <nav class="main-nav main-nav--closed main-nav--nojs">
+          <div class="main-nav__lists">
             <div class="main-nav__wrapper">
-              <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
               <ul class="main-nav__list site-list">
                 <li class="site-list__item site-list__item--active site-list__item--border">
                   <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -42,16 +43,18 @@
                 </li>
               </ul>
             </div>
+            <ul class="main-nav__list site-list_users site-list">
+              <li class="site-list__item site-list__input--search">
+              <input class="site-list__input" type="search" name="search" placeholder="Поиск по сайту">
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--cart" href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
+            </div>
           </nav>
         </div>
-        <!-- <ul class="site-list_users site-list">
-          <li class="site-list__item site-list__input--search">
-            <input class="site-list__input" type="search" name="search" placeholder="Поиск по сайту">
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--cart" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul> -->
+
         <span class="page-header__info">Бесплатная доставка по России</span>
       </div>
       </header>
