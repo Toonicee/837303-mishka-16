@@ -1,7 +1,7 @@
 .main-nav--closed .main-nav__toggle::before {
   position: absolute;
   content: "";
-  top: 10px;
+  top: 29px;
   right: 0;
   z-index: 100;
   width: 22px;
@@ -18,7 +18,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 12px;
+    top: 29px;
     right: 0;
     z-index: 100;
     width: 22px;
@@ -41,6 +41,8 @@
 .main-nav__list {
   text-align: center;
   padding: 0;
+  position: relative;
+  z-index: 100;
   margin: 0;
 }
 
@@ -56,6 +58,10 @@
   .main-nav__list {
     margin-top: 80px;
     margin-bottom: -80px;
+  }
+
+  .main-nav__wrapper {
+    width: 320px;
   }
 }
 

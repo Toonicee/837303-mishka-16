@@ -27,10 +27,10 @@
 .form-order fieldset {
   border: none;
   margin: 0;
-  padding: 0;
 }
 
 .form-order {
+  width: 100%;
   margin-top: 11px;
   line-height: 18px;
 }
@@ -211,19 +211,31 @@
 @media (min-width: $tablet-width) {
   .form-order__inner {
     display: flex;
+    align-items: baseline;
     width: 668px;
     padding-bottom: 8px;
     margin: 0 auto;
   }
 
+  .form-order__wrapper-radio {
+    padding-bottom: 0;
+    margin-bottom: 9px;
+  }
+
   .form-order {
+    margin-top: 3px;
     font-size: 19px;
+    width: 100%;
   }
 
   .form-order__wrapper-checkbox {
     width: 100%;
     background-color: #f1f1f1;
-    padding-bottom: 54px;
+    padding: 0 0 54px 0;
+  }
+
+  .form-order__wrapper-fields {
+    padding: 50px 0 15px 0;
   }
 
   .form-order__label-checkbox {
@@ -262,10 +274,6 @@
     margin-top: 68px;
   }
 
-  .form-order__wrapper-radio {
-    margin-bottom: 9px;
-  }
-
   .form-order__item {
     padding: 0 0 58px 0;
   }
@@ -275,12 +283,23 @@
     padding: 50px 0 7px 0;
   }
 
+  .form-order__input-fields {
+    padding: 17px 0 14px 17px;
+    margin: 0 0 0 27px;
+  }
+
   .form-order__title {
     width: 168px;
 
     &::before {
       content: none;
     }
+  }
+
+  .form-order__inner > input {
+    padding: 16px 0 15px 16px;
+    margin-left: 47px;
+    background-color: #f1f1f1;
   }
 
   .form-order__label-radio {
@@ -301,15 +320,52 @@
     }
   }
 
+  .form-order__wrapper {
+    margin: 0 auto;
+  }
+
   .form-order__label--fields {
     display: flex;
     align-items: baseline;
+    margin-bottom: -32px;
   }
 
   .form-order__wrapper-button {
+    width: 668px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+  }
+
+  .form-order__fieldset-tel {
+    padding: 51px 0 0 0;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+
+  .form-order__fieldset-E-mail {
+    padding: 16px 0 44px 0;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+
+  .form-order__fieldset-textarea {
+    padding: 48px 0 44px 0;
+  }
+
+  .form-order__textarea {
+    width: 500px;
+  }
+
+  .form-order__button {
+    padding: 17px 30px 15px;
+    margin-bottom: 50px;
+  }
+
+  .form-order__necessarily {
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 

@@ -9,8 +9,11 @@
 
 .page-header__logo {
   display: flex;
+  position: relative;
+  width: 260px;
   justify-content: center;
-  margin: 22px 0 15px 0;
+  padding: 22px 0 15px 0;
+  margin: 0 auto;
 }
 
 .page-header__link-logo:hover {
@@ -19,7 +22,6 @@
 
 .page-header__container {
   position: relative;
-  margin: 0 30px auto;
 }
 
 .page-header__info {
@@ -41,6 +43,7 @@
   }
 
   .page-header__logo {
+    padding: 0;
     position: absolute;
     justify-content: flex-start;
     margin: 22px 0 9px 0;
@@ -51,13 +54,9 @@
     height: 46px;
   }
 
-
-  .page-header__wrapper {
-    margin: 0 0 6px 0;
-  }
-
   .page-header__info {
     display: block;
+    z-index: 100;
   }
 }
 
@@ -72,8 +71,8 @@
 
   .page-header__logo {
     position: absolute;
-    right: 45%;
-    margin: 8px 0 0 50px;
+    right: 34%;
+    top: -13px;
   }
 
   .page-header__info {
