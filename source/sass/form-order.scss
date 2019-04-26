@@ -373,9 +373,18 @@
   .form-order__inner {
     width: 1050px;
     margin: 0 auto;
+
+    > input {
+      width: 700px;
+      margin-left: 0;
+    }
   }
 
   .form-order__list {
     width: auto;
+  }
+
+  .form-order__item--fields {
+    width: 700px;
   }
 }

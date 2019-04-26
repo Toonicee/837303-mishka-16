@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head >
   <body>
- <header class="page-header">
-      <div class="page-header__container">
-        <div class="page-header__wrapper">
+  <header class="page-header">
+    <div class="page-header__container">
+      <div class="page-header__wrapper">
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="page-header__logo logo">
             <a class="page-header__link"  href="index.html">
@@ -40,20 +40,20 @@
             </div>
             <ul class="main-nav__list site-list_users site-list">
               <li class="site-list__item site-list__input--search">
-              <label class="site-list__label">
-                <svg class="site-list__icon-search" width="17.6px" height="17.6px">
-                  <use xlink:href="sass/sprite-edited.svg#icon-search"></use>
-                </svg>
-                <input class="site-list__input" type="search" name="search" placeholder="Поиск по сайту">
-              </label>
+                <label class="site-list__label">
+                  <svg class="site-list__icon-search" width="17.6px" height="17.6px">
+                    <use xlink:href="sass/sprite-edited.svg#icon-search"></use>
+                  </svg>
+                  <input class="site-list__input" type="search" name="search" placeholder="Поиск по сайту">
+                </label>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link site-list__link--cart" href="#">
                   <span class="site-list__link-wrapper">
                     <svg class="site-list__icon-cart" width="20.294px" height="18.849px">
                       <use xlink:href="sass/sprite-edited.svg#icon-cart"></use>
-                    </svg>
-                    Корзина: пока пуста
+                  </svg>
+                  Корзина: пока пуста
                   </span>
                 </a>
               </li>
@@ -63,7 +63,7 @@
         </div>
         <span class="page-header__info">Бесплатная доставка по России</span>
       </div>
-      </header>
+    </header>
     <main class="page-main">
       <div class="page-main__wrapper">
         <div class="page-main__inner" >
@@ -80,7 +80,7 @@
           </ul>
         </section>
       </div>
-        <section class="best-product">
+      <section class="best-product">
           <div class="best-product__wrapper">
             <div class="best-product__inner">
               <h2 class="best-product__title">Вязанные корзинки</h2>
@@ -103,15 +103,19 @@
                 <td class="best-product__field">15 см</td>
               </tr>
             </table>
-            </div>
-            </div>
             <div class="best-product-block-price">
               <span class="best-product__price">Цена: 990руб.</span>
               <a class="button best-product__button" type="button">Заказать</a>
             </div>
+          </div>
             <div class="best-product__item" >
-              <img class="best-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x" >
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки">
+              </picture>
             </div>
+          </div>
           </div>
         </div>
       </section>
@@ -194,7 +198,11 @@
           </table>
           </div>
           <div class="contacts__map">
-            <img class="contacts__map-image" src="img/map-mobile@1x.jpg" width="322" height="457">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x" >
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Вязанные корзинки">
+            </picture>
           </div>
           </div>
           <button class="contacts__button button">Напишите нам</button>
