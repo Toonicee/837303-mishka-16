@@ -1,8 +1,24 @@
 .short {
-  justify-content: center;
   display: flex;
   margin-bottom: 41px;
   margin-top: 65px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: -19px;
+    width: 100%;
+    height: 6px;
+    background: url("../img/bg-zigzag-line.svg") repeat-x;
+    background-size: auto 6px;
+  }
+}
+
+.short__container {
+  width: 260px;
+  margin: 0 auto;
 }
 
 .short__title {
@@ -20,57 +36,57 @@
 .short__item {
   position: relative;
   margin-top: 83px;
+  fill: $color-icon;
+
+  > svg {
+    position: absolute;
+  }
 }
 
-.short__item::before {
-  content: "";
-  position: absolute;
-  width: 33px;
-  height: 40px;
-  background-repeat: no-repeat;
+.short__icon-money {
+  top: -53px;
+  left: 0;
+}
+
+.short__icon-flower {
   top: -55px;
   left: 8px;
 }
 
-.short__item--clean::before {
-  background-image: url("../img/icon-feature-flower.svg");
+.short__icon-heart {
+  top: -48px;
+  left: 7px;
 }
 
-.short__item--ru-price::before {
-  background-image: url("../img/icon-feature-money.svg");
-  top: -53px;
-  width: 50px;
-  left: 1px;
-}
-
-.short__item--likes::before {
-  background-image: url("../img/icon-feature-heart.svg");
-  top: -49px;
-}
-
-.short__item--ball::before {
-  background-image: url("../img/icon-feature-ball.svg");
+.short__icon-ball {
   top: -51px;
-  width: 49px;
   left: 3px;
 }
 
-.short__item--rocket::before {
-  background-image: url("../img/icon-feature-rocket.svg");
+.short__icon-rocket {
   top: -50px;
-  width: 55px;
   left: -6px;
 }
 
-.short__item--gift::before {
-  background-image: url("../img/icon-feature-gift.svg");
+.short__icon-gift {
   top: -53px;
   left: 3px;
 }
+
+.short__item--clean {
+  margin-top: 85px;
+}
+
 
 @media (min-width: $tablet-width) {
   .short {
     margin-bottom: 100px;
+
+    &::before {
+      background-size: auto 16px;
+      height: 20px;
+      top: -31px;
+    }
   }
 
   .short__container {
@@ -92,7 +108,7 @@
   }
 
   .short__item {
-    margin-bottom: 29px;
+    margin-bottom: 28px;
     font-size: 20px;
     line-height: 22px;
     width: 334px;
@@ -125,6 +141,7 @@
 
 @media (min-width: $desktop-width) {
   .short__item {
+    margin-top: 82px;
     width: 350px;
   }
 
@@ -134,17 +151,20 @@
   }
 
   .short {
-    width: 1150px;
     margin-bottom: 42px;
+
+    &::before {
+      background-size: auto 24px;
+      height: 25px;
+      top: -40px;
+    }
   }
 
-  .short__containrt {
+  .short__container {
     width: 700px;
-    margin: 0 auto;
   }
 
   .short__wrapper {
-    width: 1050px;
     margin: 0 auto;
   }
 

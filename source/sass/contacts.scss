@@ -1,6 +1,7 @@
 .contacts {
   width: 320px;
   margin: 0 auto;
+  padding-bottom: 39px;
 }
 
 .contacts__container {
@@ -29,6 +30,10 @@
   padding-right: 20px;
 }
 
+.contacts__field--email {
+  padding: 11px 20px 1px 7px;
+}
+
 .contacts__field--adress {
   padding: 18px 36px 1px 8px;
 }
@@ -50,16 +55,17 @@
 }
 
 .contacts__button {
-  margin-left: 20px;
+  width: 260px;
+  margin: 0 30px;
   background-color: #ffffff;
-  padding: 17px 63px 15px 50px;
+  padding: 17px 0 15px 0;
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
     width: 768px;
     position: relative;
-    margin-bottom: 57px;
+    padding-bottom: 56px;
 
     &::before {
       content: "";
@@ -103,6 +109,10 @@
     margin-right: 26px;
   }
 
+  .contacts__field--email {
+    padding-top: 0;
+  }
+
   .contacts__field--adress {
     padding: 0;
     margin-right: 70px;
@@ -114,8 +124,7 @@
 
   .contacts__button {
     margin-left: 267px;
-    padding-left: 38px;
-    padding-right: 45px;
+    width: 230px;
   }
 }
 
@@ -127,7 +136,7 @@
 
   .contacts {
     width: 1150px;
-    margin-bottom: 48px;
+    padding-bottom: 48px;
 
     &::before {
       left: 113px;
@@ -165,7 +174,7 @@
 
   .contacts__button {
     position: absolute;
-    bottom: 57px;
+    bottom: 105px;
     left: -42px;
   }
 }
