@@ -10,17 +10,19 @@
 
 .page-header__logo {
   display: flex;
+  position: relative;
+  width: 260px;
   justify-content: center;
-  margin: 22px 0 15px 0;
+  padding: 22px 0 15px 0;
+  margin: 0 auto;
 }
 
-.page-header__link:hover {
+.page-header__link-logo:hover {
   opacity: 0.6;
 }
 
 .page-header__container {
   position: relative;
-  margin: 0 30px auto;
 }
 
 .page-header__info {
@@ -42,11 +44,20 @@
   }
 
   .page-header__logo {
+    padding: 0;
+    position: absolute;
     justify-content: flex-start;
+    margin: 22px 0 9px 0;
+  }
+
+  .page-header__link-logo {
+    width: 112px;
+    height: 46px;
   }
 
   .page-header__info {
     display: block;
+    z-index: 100;
   }
 }
 
@@ -56,11 +67,13 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
+    margin-bottom: 0;
   }
 
   .page-header__logo {
-    margin-right: 20px;
-    margin-left: 50px;
+    position: absolute;
+    right: 34%;
+    top: -13px;
   }
 
   .page-header__info {

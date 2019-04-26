@@ -95,7 +95,7 @@
     &::before {
       background-size: auto 16px;
       height: 20px;
-      top: -27px;
+      top: -31px;
     }
   }
 
@@ -118,7 +118,7 @@
   }
 
   .short__item {
-    margin-bottom: 29px;
+    margin-bottom: 28px;
     font-size: 20px;
     line-height: 22px;
     width: 334px;
@@ -151,6 +151,7 @@
 
 @media (min-width: $desktop-width) {
   .short__item {
+    margin-top: 82px;
     width: 350px;
   }
 
@@ -169,9 +170,8 @@
     }
   }
 
-  .short__containrt {
+  .short__container {
     width: 700px;
-    margin: 0 auto;
   }
 
   .short__wrapper {

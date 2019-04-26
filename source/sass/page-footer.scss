@@ -14,13 +14,12 @@
 }
 
 .page-footer__social {
-  margin: 39px 10px 0 10px;
-  padding: 26px 0 0 2px;
+  padding: 25px 0 0 0;
 }
 
 .page-footer__text {
   display: inline-block;
-  margin-left: 19px;
+  margin-left: 10px;
   text-decoration: none;
   color: #000000;
   line-height: 18px;
@@ -40,7 +39,7 @@
 }
 
 .page-footer__developed {
-  margin: 0 57px 0 66px;
+  margin: 0 57px 0 55px;
 }
 
 @media (min-width: $tablet-width) {
@@ -90,5 +89,6 @@
   .page-footer__developed {
     display: flex;
     justify-content: flex-end;
+    margin: 0 63px 10px 0;
   }
 }
