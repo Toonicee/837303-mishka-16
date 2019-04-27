@@ -5,16 +5,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
-    <script>
-    // Picture element HTML5 shiv
-    document.createElement( "picture" );
-    </script>
-    <script src="js/picturefill.min.js" async></script>
   </head >
   <body>
-    <header class="page-header">
-      <div class="page-header__container">
-        <div class="page-header__wrapper">
+  <header class="page-header">
+    <div class="page-header__container">
+      <div class="page-header__wrapper">
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="page-header__logo logo">
             <a class="page-header__link"  href="index.html">
@@ -45,27 +40,35 @@
             </div>
             <ul class="main-nav__list site-list_users site-list">
               <li class="site-list__item site-list__input--search">
-              <input class="site-list__input" type="search" name="search" placeholder="Поиск по сайту">
+                <label class="site-list__label">
+                  <svg class="site-list__icon-search" width="17.6px" height="17.6px">
+                    <use xlink:href="sass/sprite-edited.svg#icon-search"></use>
+                  </svg>
+                  <input class="site-list__input" type="search" name="search" placeholder="Поиск по сайту">
+                </label>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link site-list__link--cart" href="#">Корзина: пока пуста</a>
+                <a class="site-list__link site-list__link--cart" href="#">
+                  <span class="site-list__link-wrapper">
+                    <svg class="site-list__icon-cart" width="20.294px" height="18.849px">
+                      <use xlink:href="sass/sprite-edited.svg#icon-cart"></use>
+                  </svg>
+                  Корзина: пока пуста
+                  </span>
+                </a>
               </li>
             </ul>
             </div>
           </nav>
         </div>
-
         <span class="page-header__info">Бесплатная доставка по России</span>
       </div>
-      </header>
+    </header>
     <main class="page-main">
       <div class="page-main__wrapper">
         <div class="page-main__inner" >
-          <div class="page-main__title-container">
-            <h1 class="page-main__title page-main__title--index">Милые штуки ручной<br> работы для дома</h1>
-          </div>
+          <h1 class="page-main__title page-main__title--index">Милые штуки ручной<br> работы для дома</h1>
         </div>
-
         <section class="page-main_product-group">
           <ul class="page-main__list">
             <li class="page-main__item-tool">
@@ -76,9 +79,8 @@
             </li>
           </ul>
         </section>
-        </div>
       </div>
-        <section class="best-product">
+      <section class="best-product">
           <div class="best-product__wrapper">
             <div class="best-product__inner">
               <h2 class="best-product__title">Вязанные корзинки</h2>
@@ -122,12 +124,39 @@
           <div class="short__wrapper">
             <h2 class="short__title">Коротко о нас</h2>
             <ul class="short__list">
-              <li class="short__item short__item--clean">Экологически<br> чистые материалы</li>
-              <li class="short__item short__item--ru-price">Скандинавский стиль<br> по российской цене</li>
-              <li class="short__item short__item--likes">Увеличивает лайки<br> на фотографиях</li>
-              <li class="short__item short__item--ball">Связанно вручную с<br> любовью и умилением</li>
-              <li class="short__item short__item--rocket">Поддержка отечественного<br> производителя</li>
-              <li class="short__item short__item--gift">Поставляется в<br> подарочтой упаковке</li>
+              <li class="short__item short__item--clean">
+                <svg class="short__icon-flower" width="31.972px" height="37.301px">
+                  <use xlink:href="sass/sprite-edited.svg#icon-flower"></use>
+                </svg>
+                Экологически<br> чистые материалы</li>
+              <li class="short__item short__item--ru-price">
+                <svg class="short__icon-money" width="46.575px" height="27.332px">
+                  <use xlink:href="sass/sprite-edited.svg#icon-money"></use>
+                </svg>
+                Скандинавский стиль<br> по российской цене</li>
+              <li class="short__item short__item--likes">
+                <svg class="short__icon-heart" width="33.05px" height="27.857px">
+                  <use xlink:href="sass/sprite-edited.svg#icon-heart"></use>
+                </svg>
+                Увеличивает лайки<br> на фотографиях</li>
+              <li class="short__item short__item--ball">
+                <svg class="short__icon-ball" width="34.373px" height="34.373px">
+                  <use xlink:href="sass/sprite-edited.svg#icon-ball"></use>
+                </svg>
+                Связанно вручную с <br> любовью и умилением
+              </li>
+              <li class="short__item short__item--rocket">
+                <svg class="short__icon-rocket" width="54.156px" height="23.183px">
+                  <use xlink:href="sass/sprite-edited.svg#icon-rocket"></use>
+                </svg>
+                Поддержка отечественного<br> производителя
+              </li>
+              <li class="short__item short__item--gift">
+                <svg class="short__icon-gift" width="32.666px" height="32.486px">
+                  <use xlink:href="sass/sprite-edited.svg#icon-gift"></use>
+                </svg>
+                Поставляется в<br> подарочтой упаковке
+              </li>
             </ul>
           </div>
         </div>
@@ -207,6 +236,7 @@
     <script>
   var navMain = document.querySelector('.main-nav');
   var navToggle = document.querySelector('.main-nav__toggle');
+  var navUsers = document.querySelector('.site-list_users');
 
   navMain.classList.remove('main-nav--nojs');
 
@@ -220,37 +250,5 @@
     }
   });
 </script>
-<!-- <script>
-  var modalForm = document.querySelector('.modal--cart');
-  var pageLink = document.querySelector('.best-product__button');
-  var pageButton = document.querySelector('.modal-button');
-
-  pageLink.addEventListener('click', function() {
-     modalForm.classList.add('modal');
-  });
-
-    pageButton.addEventListener('click', function() {
-     modalForm.classList.add('modal');
-  });
-
-</script> -->
-<div class="modal modal--cart">
-  <h2 class="modal__title">Добавить в корзину</h2>
-      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
-        <span class="modal__form-text">Выберите размер:</span>
-        <div class="modal__form-controls">
-          <label class="modal__label">
-            <input class="modal__input  modal__input--checkbox visually-hidden" type="checkbox" name="s-size" checked>
-          S</label>
-          <label class="modal__label">
-            <input class="modal__input  modal__input--checkbox visually-hidden" type="checkbox" name="m-size">
-          M</label>
-          <label class="modal__label">
-            <input class="modal__input  modal__input--checkbox visually-hidden" type="checkbox" name="l-size">
-          L</label>
-        </div>
-        <button class="button modal-button" type="submit" title="Добавить в корзину">Добавить</button>
-      </form>
-    </div>
   </body>
 </html>
