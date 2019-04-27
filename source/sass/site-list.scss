@@ -18,10 +18,6 @@
   text-decoration: none;
 }
 
-.site-list__link:hover {
-  opacity: 0.6;
-}
-
 .site-list__item--diskont,
 .site-list__item--new {
   font-size: 15px;
@@ -73,15 +69,16 @@
   line-height: 24px;
 }
 
-.site-list__link--cart {
-  position: relative;
-  padding: 29px 10px 27px;
-}
-
 .site-list__icon-cart {
   position: absolute;
   top: 0;
   left: 18%;
+}
+
+.site-list__input--search svg {
+  &:hover {
+    fill: #63d1bb;
+  }
 }
 
 @media (min-width: $tablet-width) {

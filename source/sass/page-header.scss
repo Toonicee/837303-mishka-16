@@ -17,8 +17,14 @@
   margin: 0 auto;
 }
 
-.page-header__link-logo:hover {
-  opacity: 0.6;
+.page-header__link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .page-header__container {
