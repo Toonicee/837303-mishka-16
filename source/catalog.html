@@ -40,10 +40,22 @@
             </div>
             <ul class="main-nav__list site-list_users site-list">
               <li class="site-list__item site-list__input--search">
-              <input class="site-list__input" type="search" name="search" placeholder="Поиск по сайту">
+                <label class="site-list__label">
+                  <svg class="site-list__icon-search" width="17.6px" height="17.6px">
+                    <use xlink:href="sass/sprite-edited.svg#icon-search"></use>
+                  </svg>
+                  <input class="site-list__input" type="search" name="search" placeholder="Поиск по сайту">
+                </label>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link site-list__link--cart" href="#">Корзина: пока пуста</a>
+                <a class="site-list__link site-list__link--cart" href="#">
+                  <span class="site-list__link-wrapper">
+                    <svg class="site-list__icon-cart" width="20.294px" height="18.849px">
+                      <use xlink:href="sass/sprite-edited.svg#icon-cart"></use>
+                  </svg>
+                  Корзина: пока пуста
+                  </span>
+                </a>
               </li>
             </ul>
             </div>
@@ -130,28 +142,46 @@
         </div>
       </div>
     </main>
-  <footer class="page-footer">
-    <div class="page-footer__container">
+    <footer class="page-footer">
+      <div class="page-footer__container">
       <div class="page-footer__wrapper" >
         <a class="page-footer__logo logo" href="#">
-          <img class="logo-image--footer" src="img/logo-footer.svg">
+          <svg class="logo-image--footer" width="101.615px" height="34.056px">
+            <use xlink:href="sass/sprite-edited.svg#logo-footer"></use>
+          </svg>
         </a>
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Мы в Инстограмме</span></a>
+            <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Мы в Инстограмме</span>
+              <svg class="social__icon-instagram" width="21.769px" height="21.334px">
+                <use xlink:href="sass/sprite-edited.svg#icon-instagram"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+            <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в Фейсбуке</span>
+              <svg class="social__icon-facebook" width="14.962px" height="27.718px"">
+                <use xlink:href="sass/sprite-edited.svg#icon-facebook"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
+            <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span>
+              <svg class="social__icon-twitter" width="23.494px" height="20.168px">
+                <use xlink:href="sass/sprite-edited.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__developed">
-        <a href="htmlacademy.ru" class="page-footer__text">Разработано</a>
+        <a href="htmlacademy.ru" class="page-footer__text">Разработано
+          <svg class="page-footer__icon-htmlacademy" width="40px" height="40px">
+            <use xlink:href="sass/sprite-edited.svg#icon-htmlacademy"></use>
+          </svg>
+        </a>
       </div>
       </div>
     </footer>

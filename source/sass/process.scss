@@ -31,6 +31,21 @@
   }
 }
 
+.process__inner {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-play.svg");
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 75px;
+    top: 25%;
+    left: 33%;
+  }
+}
+
 .process__text {
   margin: 22px 48px 23px 32px;
   font-weight: 400;
@@ -44,7 +59,7 @@
   margin-bottom: 32px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .process__button {
     padding: 17px 219px 15px;
     margin: 0 0 32px 43px;
@@ -77,9 +92,18 @@
     font-size: 15px;
     line-height: 30px;
   }
+
+  .process__inner {
+    position: relative;
+
+    &::before {
+      top: 40%;
+      left: 42%;
+    }
+  }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .process {
     padding-bottom: 94px;
     display: flex;
