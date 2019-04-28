@@ -1478,7 +1478,6 @@
   .site-list__input {
     width: 80px; }
   .site-list__link {
-    fill: red;
     padding: 27px 18px 10px 0; }
   .site-list__input--search {
     border-right: 1px solid #ededed;
