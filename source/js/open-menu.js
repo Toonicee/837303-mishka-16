@@ -1,6 +1,5 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
-var navUsers = document.querySelector('.site-list_users');
 
   navMain.classList.remove('main-nav--nojs');
 

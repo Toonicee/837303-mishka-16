@@ -71,7 +71,7 @@
     height: 15px;
   }
 
-  &:checked + label::before {
+  &:hover + label::before {
     border: 2px solid #62d1ba;
   }
 }
@@ -193,6 +193,10 @@
   font-size: 17px;
   color: #444444;
   padding: 17px 0 14px 0;
+
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
 }
 
 .form-order__textarea {
@@ -248,8 +252,6 @@
   }
 
   .form-order__label-checkbox {
-    padding-left: 79px;
-
     &::before {
       top: -15px;
       left: -1px;
@@ -277,6 +279,7 @@
 
   .form-order__list {
     width: 500px;
+    margin-left: 160px;
   }
 
   .form-order__title--checkbox {

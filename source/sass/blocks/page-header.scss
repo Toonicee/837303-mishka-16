@@ -69,7 +69,6 @@
 
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
-    width: 700px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
@@ -78,20 +77,16 @@
 
   .page-header__logo {
     position: absolute;
-    right: 34%;
+    right: 340px;
     top: -13px;
   }
 
   .page-header__info {
-    right: 58px;
-  }
-
-  .page-header {
-    width: 1150px;
+    right: 9px;
   }
 
   .page-header__container {
     width: 1050px;
-    padding: 0 50px;
+    margin: 0 auto;
   }
 }

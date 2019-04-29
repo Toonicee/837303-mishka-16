@@ -155,21 +155,20 @@
 
 @media (min-width: $desktop-width) {
   .best-product__wrapper {
-    width: 1050px;
     position: relative;
-    margin: 0 50px auto;
+    width: 1050px;
   }
 
   .best-product {
     margin-bottom: 111px;
-    width: 1150px;
   }
 
   .best-product__item {
     width: 525px;
+    margin-top: 0;
     position: absolute;
     right: 0;
-    bottom: -5px;
+    top: 73px;
   }
 
   .best-product__inner {
@@ -192,6 +191,7 @@
 
   .best-product__title {
     z-index: 100;
+    display: inline-block;
     font-size: 53px;
     line-height: 57px;
   }
@@ -203,6 +203,7 @@
 
   .best-product-block-price {
     margin-top: 113px;
+    position: initial;
     bottom: -190px;
   }
 

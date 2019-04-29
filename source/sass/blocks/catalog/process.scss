@@ -1,17 +1,23 @@
 .process {
   position: relative;
-  border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
   text-align: left;
   padding: 96px 0 58px 0;
   width: 260px;
   margin: 0 auto;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .process__wrapper-title {
   position: absolute;
   top: 0;
   margin: 11px 0 0 2px;
+}
+
+.process__wrapper {
+  border: 1px solid #ededed;
 }
 
 .process__title {
@@ -70,6 +76,11 @@
     margin-top: 23px;
   }
 
+  .process__container {
+    width: 668px;
+    margin: 0 auto;
+  }
+
   .process {
     padding: 0 0 76px 0;
     display: flex;
@@ -105,13 +116,16 @@
 
 @media (min-width: $desktop-width) {
   .process {
-    padding-bottom: 94px;
-    display: flex;
-    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 98px;
   }
 
-  .process__inner {
-    width: 680px;
+  .process__container {
+    width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
   }
 
   .process__title {
