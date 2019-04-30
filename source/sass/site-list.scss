@@ -7,7 +7,6 @@
 
 .site-list__link {
   padding: 27px 28px 27px 0;
-  padding-right: 10px;
   position: relative;
   display: block;
   font-family: "Open Sans", sans-serif;
@@ -16,6 +15,10 @@
   line-height: 24px;
   color: #000000;
   text-decoration: none;
+}
+
+.site-list__link--cart {
+  padding: 27px 0px 27px 0;
 }
 
 .site-list__item--diskont,
@@ -37,12 +40,13 @@
 
 .site-list__label {
   position: relative;
+  margin-left: 45px;
 }
 
 .site-list__icon-search {
   position: absolute;
   top: 0;
-  left: -25px;
+  left: -42px;
 }
 
 .site-list__link-wrapper {
@@ -51,7 +55,7 @@
   .site-list__icon-cart {
     position: absolute;
     top: 0;
-    left: -25px;
+    left: -44px;
   }
 }
 
@@ -84,6 +88,10 @@
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
+  }
+
+  .site-list__label {
+    margin: 0;
   }
 
   .site-list__input::placeholder {

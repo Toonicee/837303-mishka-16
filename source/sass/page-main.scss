@@ -121,6 +121,7 @@
   .page-main__wrapper {
     padding: 0;
     position: relative;
+    background-color: #f9f9f9;
 
     &::before {
       content: "";
@@ -129,7 +130,7 @@
       width: 100%;
       top: -42px;
       left: 0;
-      background-color: #f1f1f1;
+      background-color: #f9f9f9;
     }
 
     &::after {
@@ -142,6 +143,22 @@
       background-size: 768px 26px;
       bottom: -6px;
       left: 0;
+    }
+  }
+
+  .page-main__wrapper--color {
+    background-color: #f1f1f1;
+    padding: 0;
+    position: relative;
+
+     &::before {
+      content: "";
+      position: absolute;
+      height: 100px;
+      width: 100%;
+      top: -42px;
+      left: 0;
+      background-color: #f1f1f1;
     }
   }
 

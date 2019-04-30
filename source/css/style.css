@@ -168,7 +168,6 @@
 
 .site-list__link {
   padding: 27px 28px 27px 0;
-  padding-right: 10px;
   position: relative;
   display: block;
   font-family: "Open Sans", sans-serif;
@@ -177,6 +176,9 @@
   line-height: 24px;
   color: #000000;
   text-decoration: none; }
+
+.site-list__link--cart {
+  padding: 27px 0px 27px 0; }
 
 .site-list__item--diskont,
 .site-list__item--new {
@@ -193,19 +195,20 @@
   color: #000000; }
 
 .site-list__label {
-  position: relative; }
+  position: relative;
+  margin-left: 45px; }
 
 .site-list__icon-search {
   position: absolute;
   top: 0;
-  left: -25px; }
+  left: -42px; }
 
 .site-list__link-wrapper {
   position: relative; }
   .site-list__link-wrapper .site-list__icon-cart {
     position: absolute;
     top: 0;
-    left: -25px; }
+    left: -44px; }
 
 .site-list_users {
   margin: 0;
@@ -253,6 +256,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+  .site-list__label {
+    margin: 0; }
   .site-list__input::-webkit-input-placeholder {
     font-size: 0; }
   .site-list__input:-ms-input-placeholder {
@@ -414,7 +419,8 @@
     width: 100%; }
   .page-main__wrapper {
     padding: 0;
-    position: relative; }
+    position: relative;
+    background-color: #f9f9f9; }
     .page-main__wrapper::before {
       content: "";
       position: absolute;
@@ -422,7 +428,7 @@
       width: 100%;
       top: -42px;
       left: 0;
-      background-color: #f1f1f1; }
+      background-color: #f9f9f9; }
     .page-main__wrapper::after {
       position: absolute;
       content: "";
@@ -433,6 +439,18 @@
       background-size: 768px 26px;
       bottom: -6px;
       left: 0; }
+  .page-main__wrapper--color {
+    background-color: #f1f1f1;
+    padding: 0;
+    position: relative; }
+    .page-main__wrapper--color::before {
+      content: "";
+      position: absolute;
+      height: 100px;
+      width: 100%;
+      top: -42px;
+      left: 0;
+      background-color: #f1f1f1; }
   .page-main__wrapper-title {
     padding: 0; }
   .page-main__wrapper-catalog {
@@ -943,7 +961,7 @@
   .reviews {
     margin-bottom: 147px;
     padding: 62px 0 16px 0;
-    background-image: url("../../../img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat; }
     .reviews::before {
       background-size: auto 16px;
@@ -991,14 +1009,14 @@
   .reviews {
     margin-bottom: 164px;
     padding: 0;
-    width: 1150px;
+    width: 100%;
     background-image: none; }
     .reviews::before {
       background-size: auto 20px;
       height: 20px;
       bottom: -85px; }
   .reviews__container {
-    background-image: url("../../../img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     width: 1050px;
     margin: 0 auto;
