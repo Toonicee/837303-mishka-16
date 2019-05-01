@@ -158,7 +158,17 @@
   }
 
   .site-list__item--border {
-    border-right: 1px solid #f1f1f1;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 80px;
+      top: 0;
+      right: 0;
+      background-color: #f1f1f1;
+    }
   }
 
   .site-list__link {
