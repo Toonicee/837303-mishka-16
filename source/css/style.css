@@ -302,7 +302,15 @@
   .site-list__input {
     width: 77px; }
   .site-list__item--border {
-    border-right: 1px solid #f1f1f1; }
+    position: relative; }
+    .site-list__item--border::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 80px;
+      background-color: #f1f1f1;
+      top: 0;
+      right: 0; }
   .site-list__link {
     width: 185px;
     padding-right: 0;
@@ -355,7 +363,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .page-main__wrapper--form fieldset {
-    padding-left: 0px; }
+    padding-left: 0; }
 
 .page-main__wrapper-catalog {
   margin-top: 30px; }
@@ -1348,7 +1356,6 @@
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
-  display: block;
   text-decoration: none;
   color: #000000;
   display: -webkit-box;
@@ -1593,7 +1600,7 @@
   margin-bottom: 54px; }
 
 .form-order__wrapper-fields {
-  padding-bottom: 0px; }
+  padding-bottom: 0; }
 
 .form-order__input-fields {
   width: 100%;
