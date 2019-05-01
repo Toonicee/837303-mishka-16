@@ -109,8 +109,9 @@
 }
 
 .form-order__inner {
-  > input {
+  input {
     width: 100%;
+    background-color: #f1f1f1;
     border: none;
     border-bottom: 2px solid #000000;
     line-height: 18px;
@@ -151,6 +152,17 @@
 .form-order__title-tel {
   margin: 2px 0 7px 0;
   position: relative;
+}
+
+.form-order__wrapper-svg {
+  position: relative;
+}
+
+.form-order__icon {
+  position: absolute;
+  fill: #444444;
+  top: 10px;
+  right: 10px;
 }
 
 .form-order__title-Email {
@@ -377,7 +389,7 @@
     width: 1050px;
     margin: 0 auto;
 
-    > input {
+    input {
       width: 700px;
       margin-left: 0;
     }
