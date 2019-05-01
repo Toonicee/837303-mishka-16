@@ -54,9 +54,10 @@
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
-  display: block;
   text-decoration: none;
   color: #000000;
+  display: flex;
+  justify-content: space-between;
 }
 
 .products__price::before {

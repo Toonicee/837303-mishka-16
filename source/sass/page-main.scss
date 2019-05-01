@@ -33,7 +33,7 @@
   font-weight: 400;
   font-size: 13px;
   color: #444444;
-  margin: 23px 15px 13px 0;
+  margin: 23px 15px 7px 0;
 }
 
 .page-main__wrapper--form {
@@ -41,6 +41,10 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+
+  fieldset {
+    padding-left: 0;
+  }
 }
 
 .page-main__wrapper-catalog {
@@ -151,7 +155,7 @@
     padding: 0;
     position: relative;
 
-     &::before {
+    &::before {
       content: "";
       position: absolute;
       height: 100px;
