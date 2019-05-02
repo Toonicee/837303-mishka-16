@@ -52,6 +52,13 @@
 
 .contacts__map {
   margin: 33px 0 32px 0;
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  min-height: 457px;
+
+  iframe {
+    height: 457px;
+  }
 }
 
 .contacts__button {
@@ -120,6 +127,8 @@
 
   .contacts__map {
     margin: 56px 0 48px 0;
+    background-image: url("../img/map-tablet@1x.jpg");
+    background-repeat: no-repeat;
   }
 
   .contacts__button {
@@ -168,7 +177,9 @@
   }
 
   .contacts__map {
+    background-image: url("../img/map-desktop@2x.jpg");
     width: 525px;
+    min-height: 457px;
     margin-top: 0;
   }
 
