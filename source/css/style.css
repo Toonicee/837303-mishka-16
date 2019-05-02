@@ -274,7 +274,9 @@
   .site-list__input {
     width: 80px; }
   .site-list__link {
-    padding: 27px 18px 10px 0; }
+    padding: 27px 0 10px 0; }
+  .site-list__link {
+    width: 150px; }
   .site-list__input--search {
     border-right: 1px solid #ededed;
     border-left: 1px solid #ededed;
