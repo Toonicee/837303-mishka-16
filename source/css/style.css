@@ -1567,7 +1567,6 @@
 
 .form-order__inner input {
   width: 100%;
-  background-color: #f1f1f1;
   border: none;
   border-bottom: 2px solid #000000;
   line-height: 18px;
@@ -1608,7 +1607,7 @@
   position: absolute;
   fill: #444444;
   top: 10px;
-  right: 10px; }
+  right: -7px; }
 
 .form-order__title-Email {
   margin: 15px 0 7px 0; }
@@ -1703,6 +1702,8 @@
   .form-order__list {
     width: 500px;
     margin-left: 10px; }
+  .form-order__list--margin {
+    margin: 0; }
   .form-order__title--checkbox {
     margin-top: 68px; }
   .form-order__item {
@@ -1711,8 +1712,12 @@
     width: 50%;
     padding: 50px 0 7px 0; }
   .form-order__input-fields {
-    padding: 17px 0 14px 17px;
+    padding-left: 17;
     margin: 0 0 0 27px; }
+  .form-order__icon {
+    right: 12px; }
+  .form-order__title-textarea {
+    margin: 16px 10px 24px 0; }
   .form-order__title {
     width: 168px; }
     .form-order__title::before {
@@ -1760,10 +1765,14 @@
     padding: 51px 0 0 0;
     width: 100%;
     background-color: #f1f1f1; }
+    .form-order__fieldset-tel input {
+      background-color: initial; }
   .form-order__fieldset-E-mail {
     padding: 16px 0 44px 0;
     width: 100%;
     background-color: #f1f1f1; }
+    .form-order__fieldset-E-mail input {
+      background-color: initial; }
   .form-order__fieldset-textarea {
     padding: 48px 0 44px 0; }
   .form-order__textarea {
@@ -1771,9 +1780,12 @@
   .form-order__button {
     padding: 17px 30px 15px;
     margin-bottom: 50px; }
+  .form-order__wrapper-svg {
+    width: 73%; }
   .form-order__necessarily {
     font-size: 17px;
-    line-height: 30px; } }
+    line-height: 30px;
+    margin-top: 9px; } }
 
 @media (min-width: 1150px) {
   .form-order__inner {
@@ -1785,6 +1797,8 @@
   .form-order__list--color {
     margin-left: 86px;
     width: 76.1%; }
+  .form-order__wrapper-svg {
+    width: 68%; }
   .form-order__item--fields {
     width: 700px; }
   .form-order__title {
