@@ -571,7 +571,10 @@
   .page-main__item-tool {
     width: 525px; }
   .page-main__text {
-    margin: 123px 194px 62px 175px; } }
+    margin: 124px 60px 62px 0; }
+  .page-main__inner-text {
+    width: 60.8%;
+    margin: 0 auto; } }
 
 .best-product {
   margin-bottom: 171px;
@@ -1776,11 +1779,16 @@
     margin: 0 auto; }
     .form-order__inner input {
       width: 700px;
-      margin-left: 0; }
-  .form-order__list {
-    width: auto; }
+      margin-left: 31px; }
+  .form-order__list--color {
+    margin-left: 86px;
+    width: 76.1%; }
   .form-order__item--fields {
-    width: 700px; } }
+    width: 700px; }
+  .form-order__title {
+    text-align: center; }
+  .form-order__item--checkbox {
+    width: 33%; } }
 
 .page-footer__wrapper {
   display: none; }

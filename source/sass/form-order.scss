@@ -391,15 +391,24 @@
 
     input {
       width: 700px;
-      margin-left: 0;
+      margin-left: 31px;
     }
   }
 
-  .form-order__list {
-    width: auto;
+  .form-order__list--color {
+    margin-left: 86px;
+    width: 76.1%;
   }
 
   .form-order__item--fields {
     width: 700px;
+  }
+
+  .form-order__title {
+    text-align: center;
+  }
+
+  .form-order__item--checkbox {
+    width: 33%;
   }
 }
