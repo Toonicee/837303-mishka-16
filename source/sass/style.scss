@@ -1,19 +1,20 @@
-@import "variables";
-@import "page-header";
-@import "main-nav";
-@import "best-product";
-@import "content";
-@import "page-main";
+@import "variables.scss";
+@import "page-header.scss";
+@import "main-nav.scss";
+@import "site-list.scss";
+@import "page-main.scss";
+@import "best-product.scss";
+@import "short.scss";
+@import "reviews.scss";
 @import "contacts.scss";
-@import "page-footer";
-@import "short";
-@import "reviews";
-@import "products";
-@import "process";
-@import "site-list";
-@import "social-list";
-@import "form-order";
-@import "modal";
+@import "process.scss";
+@import "products.scss";
+@import "form-order.scss";
+@import "page-footer.scss";
+@import "social.scss";
+@import "content.scss";
+@import "modal.scss";
+@import "normalize.scss";
 
 body {
   width: 100%;
@@ -38,10 +39,4 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-@media (min-width: $desktop-width) {
-  body {
-    width: 1150px;
-  }
 }

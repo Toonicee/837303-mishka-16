@@ -15,6 +15,27 @@
 
 .page-footer__social {
   padding: 25px 0 0 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 1px;
+    background-color: #ffffff;
+    bottom: 10px;
+    left: 28px;
+  }
+}
+
+.page-footer__logo {
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__text {
@@ -26,16 +47,21 @@
   font-size: 19px;
   position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 35px;
-    top: -8px;
-    left: 155px;
-    background-repeat: no-repeat;
-    background-image: url("../img/logo-htmlacademy.svg");
+  fill: #63d1bb;
+
+  &:hover {
+    fill: #46c1ae;
   }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__icon-htmlacademy {
+  position: absolute;
+  top: -11px;
+  left: 148px;
 }
 
 .page-footer__developed {
@@ -57,7 +83,7 @@
   }
 
   .page-footer__container {
-    width: 668px;
+    width: 87%;
     margin: 0 auto;
     padding: 8px 0 60px 0;
     display: flex;
@@ -68,6 +94,10 @@
   .page-footer__social {
     margin: 0;
     padding: 0;
+
+    &::after {
+      content: none;
+    }
   }
 
   .page-footer__developed {
@@ -84,6 +114,7 @@
 
   .page-footer__container {
     width: 1050px;
+    margin: 0 auto;
   }
 
   .page-footer__developed {

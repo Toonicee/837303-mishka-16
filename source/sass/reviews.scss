@@ -110,12 +110,15 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    margin-bottom: 163px;
+    margin-bottom: 147px;
+    padding: 62px 0 16px 0;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
 
     &::before {
       background-size: auto 16px;
       height: 20px;
-      bottom: -105px;
+      bottom: -90px;
     }
   }
 
@@ -159,7 +162,7 @@
   .reviews__button-slider {
     position: absolute;
     right: 0;
-    top: 277px;
+    top: 275px;
   }
 
   .reviews__prev {
@@ -183,7 +186,10 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    width: 1150px;
+    margin-bottom: 164px;
+    padding: 0;
+    width: 100%;
+    background-image: none;
 
     &::before {
       background-size: auto 20px;
@@ -193,10 +199,10 @@
   }
 
   .reviews__container {
-    width: 1050px;
-    margin: 0 auto;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+    width: 1050px;
+    margin: 0 auto;
     padding: 60px 0 64px 0;
   }
 
@@ -218,12 +224,11 @@
     margin-top: 7px;
   }
 
-  .reviews__text {
-    margin: 26px 15px 29px 0;
+  .reviews__button-slider {
+    top: 236px;
   }
 
-  .reviews__next::after,
-  .reviews__prev::before {
-    top: -29px;
+  .reviews__text {
+    margin: 26px 15px 29px 0;
   }
 }
