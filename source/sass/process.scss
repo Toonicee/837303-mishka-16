@@ -4,10 +4,6 @@
   padding: 96px 0 58px 0;
   width: 260px;
   margin: 0 auto;
-
-  &:hover {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
-  }
 }
 
 .process__wrapper-title {
@@ -18,6 +14,10 @@
 
 .process__container {
   border: 1px solid #ededed;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .process__title {

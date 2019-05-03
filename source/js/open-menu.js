@@ -1,6 +1,8 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 
+
+
   navMain.classList.remove('main-nav--nojs');
 
   navToggle.addEventListener('click', function() {
@@ -11,4 +13,16 @@ var navToggle = document.querySelector('.main-nav__toggle');
       navMain.classList.add('main-nav--closed');
       navMain.classList.remove('main-nav--opened');
     }
+  });
+
+var bestButton = document.querySelector('.best-product__button');
+var mPopup = document.querySelector('.modal');
+var modalBtn = document.querySelector('.modal-button');modal--cart
+var cartPopup = document.querySelector('.modal--cart');
+
+  bestButton.addEventListener("click", function (evt) {
+     evt.preventDefault();
+     mPopup.classList.remove("modal");
+     evt.preventDefault();
+    modalBtn.classList.add("modal");
   });

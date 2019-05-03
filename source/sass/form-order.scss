@@ -159,7 +159,6 @@
 
 .form-order__icon {
   position: absolute;
-  fill: #444444;
   top: 10px;
   right: -7px;
 }
@@ -221,6 +220,16 @@
   line-height: 16px;
   color: #444444;
   margin: 0 0 30px 0;
+}
+
+.form-order__input-tel {
+  &:hover {
+    border-color: #62d1ba;
+    .form-order__wrapper-svg {
+      fill: #62d1ba;
+
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

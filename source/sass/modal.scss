@@ -1,5 +1,6 @@
 .modal {
   display: none;
+  position: fixed;
 }
 
 .modal--cart {
@@ -59,7 +60,7 @@
 @media (min-width: $tablet-width) {
   .modal--cart {
     width: 565px;
-    right: 1%;
+    left: 25%;
   }
 
   .modal-button {
