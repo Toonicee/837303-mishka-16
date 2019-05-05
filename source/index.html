@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js"></script>
   </head >
   <body>
@@ -260,11 +260,12 @@
           </table>
           </div>
           <div class="contacts__map">
-            <picture>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6034633474899!2d30.321030377094377!3d59.938721856228874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1556801909436!5m2!1sru!2sru" style="border:0" allowfullscreen></iframe>
+            <!-- <picture>
               <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x" >
               <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
               <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Вязанные корзинки">
-            </picture>
+            </picture> -->
           </div>
           </div>
           <button class="contacts__button button">Напишите нам</button>
@@ -305,7 +306,7 @@
         </ul>
       </div>
       <div class="page-footer__developed">
-        <a href="htmlacademy.ru" class="page-footer__text">Разработано
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__text">Разработано
           <svg class="page-footer__icon-htmlacademy" width="40px" height="40px">
             <use xlink:href="#icon-htmlacademy"></use>
           </svg>
@@ -313,6 +314,24 @@
       </div>
       </div>
     </footer>
-    <script src="js/open-menu.min.js"></script>
+    <div class="modal  modal--cart">
+      <h2 class="modal__title">Добавить в корзину</h2>
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+          <span class="modal__form-text">Выберите размер:</span>
+          <div class="modal__form-controls">
+            <label class="modal__label">
+              <input class="modal__input  modal__input--checkbox visually-hidden" type="checkbox" name="s-size" checked>
+            S</label>
+            <label class="modal__label">
+              <input class="modal__input  modal__input--checkbox visually-hidden" type="checkbox" name="m-size">
+            M</label>
+            <label class="modal__label">
+              <input class="modal__input  modal__input--checkbox visually-hidden" type="checkbox" name="l-size">
+            L</label>
+          </div>
+          <button class="button modal-button" type="submit" title="Добавить в корзину">Добавить</button>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

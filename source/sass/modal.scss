@@ -1,5 +1,6 @@
 .modal {
   display: none;
+  position: fixed;
 }
 
 .modal--cart {
@@ -27,6 +28,10 @@
   border: 3px solid #ececec;
   line-height: 16px;
   text-transform: uppercase;
+
+  :hover + input {
+    background-color: red;
+  }
 }
 
 .modal__title {
@@ -59,7 +64,7 @@
 @media (min-width: $tablet-width) {
   .modal--cart {
     width: 565px;
-    right: 1%;
+    left: 25%;
   }
 
   .modal-button {
