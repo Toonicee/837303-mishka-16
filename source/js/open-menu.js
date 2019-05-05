@@ -17,12 +17,14 @@ var navToggle = document.querySelector('.main-nav__toggle');
 
 var bestButton = document.querySelector('.best-product__button');
 var mPopup = document.querySelector('.modal');
-var modalBtn = document.querySelector('.modal-button');modal--cart
-var cartPopup = document.querySelector('.modal--cart');
+var modalBtn = document.querySelector('.modal-button');
 
   bestButton.addEventListener("click", function (evt) {
      evt.preventDefault();
      mPopup.classList.remove("modal");
-     evt.preventDefault();
-    modalBtn.classList.add("modal");
+  });
+
+  modalBtn.addEventListener("click", function (evt){
+    evt.preventDefault();
+    mPopup.classList.add("modal")
   });
