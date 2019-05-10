@@ -156,7 +156,8 @@
   }
 
   .short__container {
-    width: 700px;
+    width: 1050px;
+    margin: 0 auto;
 
     &::before {
       background-size: auto 24px;
@@ -167,6 +168,7 @@
   }
 
   .short__wrapper {
+    width: 700px;
     margin: 0 auto;
   }
 
