@@ -88,23 +88,20 @@
       background-repeat: no-repeat;
     }
   }
+
   .main-nav--nojs .site-list__item {
     display: block;
   }
 
-  .main-nav--nojs  .main-nav__toggle {
-      display: none;
-  }
-
-  .main-nav--nojs
-  .site-list__item--new
-   {
-    display: none;
-  }
-  .main-nav--nojs
-  .site-list__item--diskont
-   {
+  .main-nav--nojs .main-nav__toggle {
     display: none;
   }
 
+  .main-nav--nojs .site-list__item--new {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list__item--diskont {
+    display: none;
+  }
 }
