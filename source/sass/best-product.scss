@@ -36,7 +36,7 @@
   font-size: 15px;
   text-align: left;
   font-weight: 400;
-  margin: 21px 0 20px 30px;
+  margin: 21px 0 19px 30px;
 }
 
 .best-product-block-price {
@@ -49,9 +49,14 @@
   margin-top: 0;
 }
 
+.best-product__value {
+  padding: 8px 28px 10px 0;
+  border-bottom: 1px solid #ececec;
+}
+
 .best-product__price {
   display: inline-block;
-  margin: 0 11px 25px 0;
+  margin: 0 11px 25px 7px;
 }
 
 .best-product__specification {
@@ -64,9 +69,9 @@
   border-collapse: collapse;
 }
 
-.best-product__value,
+
 .best-product__field {
-  padding: 8px 28px 10px 2px;
+  padding-right: 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -102,7 +107,7 @@
   }
 
   .best-product__inner {
-    margin: 44px 0 51px 0;
+    margin: 44px 0 49px 0;
     width: 668px;
     display: flex;
     justify-content: space-between;
@@ -120,7 +125,7 @@
   .best-product__price {
     font-size: 20px;
     line-height: 24px;
-    margin: 0 23px 33px 0;
+    margin: 0 14px 35px 0;
   }
 
   .best-product__description-wrapper {
@@ -140,7 +145,7 @@
     font-size: 17px;
     line-height: 30px;
     margin-top: 0;
-    margin-bottom: 37px;
+    margin-bottom: 36px;
   }
 
   .best-product__field {
@@ -172,10 +177,8 @@
   }
 
   .best-product__inner {
-    width: 668px;
-    margin-top: 125px;
-    margin-bottom: 49px;
-    margin-left: 22px;
+    width: 700px;
+    margin: 123px 0 49px 22px;
     justify-content: space-between;
     flex-direction: row-reverse;
   }
@@ -194,6 +197,7 @@
     display: inline-block;
     font-size: 53px;
     line-height: 57px;
+    margin-right: 25px;
   }
 
   .best-product__tool-day {
@@ -202,13 +206,17 @@
   }
 
   .best-product-block-price {
-    margin-top: 113px;
+    margin-top: 111px;
     position: initial;
     bottom: -190px;
   }
 
   .best-product__button {
-    padding: 19px 99px 13px 95px;
-    margin-right: 4px;
+    padding: 17px 101px 15px 98px;
+    margin-right: 10px;
+  }
+
+  .best-product__price {
+    margin-right: 9px;
   }
 }

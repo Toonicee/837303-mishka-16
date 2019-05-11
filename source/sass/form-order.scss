@@ -1,6 +1,7 @@
 .form-order__title {
   display: block;
-  line-height: 17px;
+  font-size: 17px;
+  line-height: 16px;
   text-transform: uppercase;
   color: #63d1bb;
   position: relative;
@@ -217,6 +218,7 @@
 .form-order__necessarily {
   display: inline-block;
   font-size: 14px;
+  font-weight: 400;
   line-height: 16px;
   color: #444444;
   margin: 0 0 30px 0;
@@ -237,7 +239,7 @@
     display: flex;
     align-items: baseline;
     width: 668px;
-    padding-bottom: 8px;
+    padding-bottom: 12px;
     margin: 0 auto;
   }
 
@@ -255,11 +257,11 @@
   .form-order__wrapper-checkbox {
     width: 100%;
     background-color: #f1f1f1;
-    padding: 0 0 54px 0;
+    padding: 0 0 47px 0;
   }
 
   .form-order__wrapper-fields {
-    padding: 50px 0 15px 0;
+    padding: 47px 0 15px 0;
   }
 
   .form-order__input-checkbox {
@@ -284,6 +286,14 @@
     padding: 0;
     margin: 0;
     margin-top: 17px;
+
+    :nth-child(2n) {
+      width: 130px;
+    }
+
+    :nth-child(2n+1) {
+      width: 261px;
+    }
   }
 
   .form-order__list {
@@ -296,20 +306,19 @@
   }
 
   .form-order__title--checkbox {
-    margin-top: 68px;
+    margin: 68px 98px 0 0;
   }
 
   .form-order__item {
-    padding: 0 0 58px 0;
+    padding: 0 0 55px 0;
+    margin-top: 3px;
   }
 
   .form-order__item--checkbox {
-    width: 50%;
-    padding: 50px 0 7px 0;
+    padding: 51px 0 7px 0;
   }
 
   .form-order__input-fields {
-    padding-left: 17;
     margin: 0 0 0 27px;
   }
 
@@ -374,7 +383,7 @@
   }
 
   .form-order__fieldset-tel {
-    padding: 51px 0 0 0;
+    padding: 50px 0 0 0;
     width: 100%;
     background-color: #f1f1f1;
 
@@ -384,7 +393,7 @@
   }
 
   .form-order__fieldset-E-mail {
-    padding: 16px 0 44px 0;
+    padding: 13px 0 38px 0;
     width: 100%;
     background-color: #f1f1f1;
 
@@ -394,11 +403,12 @@
   }
 
   .form-order__fieldset-textarea {
-    padding: 48px 0 44px 0;
+    padding: 48px 0 42px 0;
   }
 
   .form-order__textarea {
     width: 500px;
+    font-size: 19px;
   }
 
   .form-order__button {
@@ -421,16 +431,29 @@
   .form-order__inner {
     width: 1050px;
     margin: 0 auto;
+    padding-bottom: 9px;
 
     input {
       width: 700px;
-      margin-left: 31px;
     }
   }
 
   .form-order__list--color {
     margin-left: 86px;
     width: 76.1%;
+    margin-top: 0;
+
+    :nth-child(2n) {
+      width: 33%;
+    }
+
+    :nth-child(2n+1) {
+      width: 33%;
+    }
+  }
+
+  .form-order__wrapper-checkbox {
+    padding: 0 0 52px;
   }
 
   .form-order__wrapper-svg {
@@ -441,11 +464,40 @@
     width: 700px;
   }
 
-  .form-order__title {
-    text-align: center;
+  .form-order__fieldset-tel {
+    padding-top: 53px;
   }
 
-  .form-order__item--checkbox {
-    width: 33%;
+  .form-order__fieldset-E-mail {
+    padding-top: 16px;
+    padding-bottom: 41px;
+  }
+
+  .form-order__list--margin {
+    margin: 0 0 0 6px;
+  }
+
+  .form-order__title {
+    text-align: center;
+    margin-right: 2px;
+  }
+
+  .form-order__textarea {
+    width: 669px;
+    padding-bottom: 16px;
+    font-size: 20px;
+  }
+
+  .form-order__title-textarea {
+    margin-right: 7px;
+  }
+
+  .form-order__wrapper-button {
+    width: 710px;
+  }
+
+  .form-order__button {
+    padding: 16px 31px 14px 29px;
+    margin-left: 5px;
   }
 }

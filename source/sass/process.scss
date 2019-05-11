@@ -53,22 +53,22 @@
 }
 
 .process__text {
-  margin: 22px 48px 23px 32px;
+  margin: 22px 35px 25px 32px;
   font-weight: 400;
   font-size: 13px;
   color: #444444;
 }
 
 .process__button {
-  margin-left: 34px;
-  padding: 17px 23px 15px;
+  margin-left: 33px;
+  padding: 17px 25px 15px 23px;
   margin-bottom: 32px;
 }
 
 @media (min-width: $tablet-width) {
   .process__button {
-    padding: 17px 219px 15px;
-    margin: 0 0 32px 43px;
+    padding: 17px 221px 15px 219px;
+    margin: 0 0 32px 42px;
   }
 
   .process__wrapper-title {
@@ -91,7 +91,7 @@
 
   .process__title {
     font-size: 20px;
-    margin: 34px 0 0 105px;
+    margin: 29px 0 0 105px;
 
     &::before {
       top: -6px;
@@ -100,7 +100,7 @@
   }
 
   .process__text {
-    margin: 32px 40px 34px 42px;
+    margin: 32px 40px 35px 42px;
     font-size: 15px;
     line-height: 30px;
   }
@@ -109,8 +109,8 @@
     position: relative;
 
     &::before {
-      top: 40%;
-      left: 42%;
+      top: 41%;
+      left: 43%;
     }
   }
 }
@@ -131,7 +131,7 @@
   }
 
   .process__title {
-    margin: 95px 62px 0 78px;
+    margin: 95px 70px 0 75px;
 
     &::before {
       top: -54px;
@@ -149,7 +149,7 @@
   }
 
   .process__button {
-    margin: 11px 0 0 82px;
-    padding: 15px 42px 17px;
+    margin: 12px 0 0 79px;
+    padding: 15px 44px 17px 42px;
   }
 }

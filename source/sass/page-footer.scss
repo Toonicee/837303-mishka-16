@@ -1,5 +1,4 @@
 .page-footer__wrapper {
-
   display: none;
 }
 
@@ -100,7 +99,7 @@
   }
 
   .page-footer__developed {
-    margin: 0 63px 6px 0;
+    margin: 0 56px 6px 0;
   }
 }
 
@@ -111,6 +110,10 @@
     width: 350px;
   }
 
+  .page-footer__social {
+    padding-right: 11px;
+  }
+
   .page-footer__container {
     width: 1050px;
   }
@@ -118,6 +121,6 @@
   .page-footer__developed {
     display: flex;
     justify-content: flex-end;
-    margin: 0 63px 10px 0;
+    margin: 0 57px 10px 0;
   }
 }

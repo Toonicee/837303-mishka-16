@@ -85,9 +85,11 @@ gulp.task("html", function () {
 });
 
 gulp.task("jsmin", function () {
-  return gulp.src("source/js/*.js")
+  return gulp.src("source/js/script.js")
     .pipe(uglify())
+
     .pipe(rename("script.min.js"))
+
     .pipe(gulp.dest("build/js"));
 });
 
@@ -99,7 +101,6 @@ gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
       "source/img/**",
-      "source/js/**",
       "source/*.ico"
     ], {
       base: "source"
@@ -111,6 +112,7 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
+  'jsmin',
   "sprite",
   "html"));
 gulp.task("start", gulp.series("build", "server"));

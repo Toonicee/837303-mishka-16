@@ -97,6 +97,7 @@
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
+    text-align: left;
   }
 
   .site-list__label {
@@ -109,17 +110,18 @@
 
   .site-list__input {
     width: 80px;
+
+    &--search {
+      border-right: 1px solid #ededed;
+      border-left: 1px solid #ededed;
+      padding: 0 1px 13px;
+    }
   }
 
   .site-list__link {
     padding: 25px 0 10px 0;
     width: 150px;
-  }
-
-  .site-list__input--search {
-    border-right: 1px solid #ededed;
-    border-left: 1px solid #ededed;
-    padding: 0 1px 13px;
+    font-size: 15px;
   }
 
   .site-list__icon-search {
@@ -143,8 +145,9 @@
 
   .site-list__link--cart {
     width: 265px;
+    font-size: 17px;
     text-align: center;
-    padding: 32px 0 30px 35px;
+    padding: 32px 0 30px 40px;
   }
 }
 
@@ -185,6 +188,10 @@
     width: 185px;
     padding-right: 0;
     text-align: left;
+
+    &--size {
+      font-size: 17px;
+    }
   }
 
   .site-list__input--search {
