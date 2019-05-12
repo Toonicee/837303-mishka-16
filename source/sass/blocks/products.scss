@@ -30,7 +30,6 @@
 }
 
 .products__info {
-
   &:hover {
     .products__title {
       opacity: 0.6;
@@ -69,13 +68,13 @@
   justify-content: space-between;
   fill: #d3d2d2;
 
-    &:hover {
-      fill: #7ed4c6;
-    }
+  &:hover {
+    fill: #7ed4c6;
+  }
 
-    &:focus {
-      opacity: 0.3;
-    }
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .products__wrapper-image {
