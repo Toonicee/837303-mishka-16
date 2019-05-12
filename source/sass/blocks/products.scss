@@ -30,11 +30,8 @@
 }
 
 .products__info {
-  &:hover {
-    .products__price {
-      fill: #7ed4c6;
-    }
 
+  &:hover {
     .products__title {
       opacity: 0.6;
     }
@@ -70,14 +67,15 @@
   color: #000000;
   display: flex;
   justify-content: space-between;
+  fill: #d3d2d2;
 
-  &:focus {
-    fill: red;
+    &:hover {
+      fill: #7ed4c6;
+    }
 
-    .products__title {
+    &:focus {
       opacity: 0.3;
     }
-  }
 }
 
 .products__wrapper-image {
