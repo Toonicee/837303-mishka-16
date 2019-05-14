@@ -39,6 +39,19 @@
 
 .process__inner {
   position: relative;
+
+  &:hover {
+    .process__icon-play {
+      transform: scale(1.2);
+    }
+  }
+
+  &:active {
+    .process__icon-play {
+      opacity: 0.6;
+      transform: scale(0.8);
+    }
+  }
 }
 
 .process__icon-play {
@@ -46,7 +59,7 @@
   position: absolute;
   top: 25%;
   left: 31%;
-  transform: translate(0, 0);
+  transition: 0.2s;
 }
 
 .process__text {
@@ -110,11 +123,6 @@
     position: absolute;
     top: 40%;
     left: 43%;
-
-    &:hover {
-      width: 120px;
-      height: 90px;
-    }
   }
 }
 
@@ -151,18 +159,6 @@
     position: absolute;
     top: 40%;
     left: 43%;
-    transition: 0.2s linear;
-
-    &:hover {
-      max-width: 120px;
-      transform: translate(-9px, -5px);
-    }
-
-    &:active {
-      opacity: 0.6;
-      max-width: 80px;
-      transform: translate(0, 0);
-    }
   }
 
   .process__wrapper {

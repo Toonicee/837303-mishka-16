@@ -1,5 +1,7 @@
 .contacts {
-  width: 320px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   margin: 0 auto;
   padding-bottom: 39px;
 }
@@ -62,6 +64,7 @@
   margin: 33px 0 32px 0;
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   min-height: 457px;
 
   iframe {
@@ -78,8 +81,9 @@
 }
 
 .contacts__button {
+  text-align: center;
   width: 260px;
-  margin: 0 30px;
+  margin: 0 auto;
   background-color: #ffffff;
   padding: 17px 0 15px 0;
 }
