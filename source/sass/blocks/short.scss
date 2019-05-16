@@ -144,7 +144,7 @@
 @media (min-width: $desktop-width) {
   .short__item {
     margin-top: 83px;
-    width: 350px;
+    width: 50%;
   }
 
   .short__title {
@@ -157,23 +157,23 @@
   }
 
   .short__container {
-    width: 1050px;
+    width: 91.3%;
     margin: 0 auto;
 
     &::before {
       background-size: auto 24px;
       height: 25px;
-      width: 1050px;
+      width: 91.3%;
       top: -40px;
     }
   }
 
   .short__wrapper {
-    width: 700px;
+     width: 66.8%;
     margin: 0 auto;
   }
 
   .short__list {
-    width: 700px;
+    width: 100%;
   }
 }

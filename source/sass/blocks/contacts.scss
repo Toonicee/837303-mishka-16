@@ -41,6 +41,7 @@
 }
 
 .contacts__title {
+  position: relative;
   font-size: 18px;
   line-height: 30px;
   margin: 0 5px 0 0;
@@ -168,7 +169,7 @@
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
     display: flex;
-    width: 1050px;
+    width: 91.3%;
     margin: 0 auto;
   }
 
@@ -190,7 +191,7 @@
   }
 
   .contacts__container {
-    width: 525px;
+    width: 50%;
     margin: 0;
   }
 
@@ -204,8 +205,8 @@
     margin: 62px 0 0 169px;
 
     &::before {
-      left: 113px;
-      top: 53px;
+      left: -106px;
+      top: -9px;
     }
   }
 

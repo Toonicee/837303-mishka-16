@@ -1,13 +1,9 @@
-.visually-hidden {
-  display: none;
-}
-
 .button {
   display: inline-block;
   text-decoration: none;
   color: #000000;
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
+  font-family: $fonts;
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;

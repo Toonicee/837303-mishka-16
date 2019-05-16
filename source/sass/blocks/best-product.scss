@@ -161,7 +161,7 @@
 @media (min-width: $desktop-width) {
   .best-product__wrapper {
     position: relative;
-    width: 1050px;
+    width: 91.3%;
   }
 
   .best-product {
@@ -177,7 +177,7 @@
   }
 
   .best-product__inner {
-    width: 700px;
+    width: 66.8%;
     margin: 123px 0 49px 22px;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -185,7 +185,7 @@
 
   .best-product__description-inner {
     padding-left: 175px;
-    width: 350px;
+    width: 65.4%;
   }
 
   .best-product__description {
@@ -202,12 +202,12 @@
 
   .best-product__tool-day {
     margin-bottom: 9px;
-    margin-left: 9px;
+    margin-left: 1.7%;
   }
 
   .best-product-block-price {
     margin-top: 111px;
-    position: initial;
+    position: static;
     bottom: -190px;
   }
 
